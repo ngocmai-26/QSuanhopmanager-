@@ -1,0 +1,11 @@
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\QShopManagement.exe.config
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\QShopManagement.exe
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\QShopManagement.pdb
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\Guna.UI2.dll
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.AssemblyReference.cache
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.Properties.Resources.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.GenerateResource.cache
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.CoreCompileInputs.cache
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.exe
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.pdb
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmLogin.resources
