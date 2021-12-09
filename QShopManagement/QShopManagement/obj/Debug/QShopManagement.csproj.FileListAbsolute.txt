@@ -40,3 +40,7 @@ C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProductManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProviderManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCDashboard.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.dll
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.dll
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.xml
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.xml

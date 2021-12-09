@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="cad73f40f4814738874176d93d23ac0d" Name="Diagram1">
+        <EntityTypeShape EntityType="QLCHModel.sysdiagram" Width="1.5" PointX="5.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_HANGHOA" Width="1.5" PointX="3" PointY="11.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_HOADON" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_KHACHHANG" Width="1.5" PointX="0.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_NHACUNGCAP" Width="1.5" PointX="0.75" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_NHANVIEN" Width="1.5" PointX="0.75" PointY="2.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_PHIEUNHAPKHO" Width="1.5" PointX="3" PointY="15.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_TAIKHOAN" Width="1.5" PointX="3" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_CTHOADON" Width="1.5" PointX="5.25" PointY="2.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="QLCHModel.tbl_CTPHIEUNHAP" Width="1.5" PointX="5.25" PointY="11.625" IsExpanded="true" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_CTHOADON_tbl_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_CTPHIEUNHAP_tbl_HANGHOA" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_HANGHOA_tbl_NHACUNGCAP" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_CTHOADON_tbl_HOADON" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_HOADON_tbl_KHACHHANG" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_HOADON_tbl_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_TAIKHOAN_tbl_NHANVIEN" ManuallyRouted="false" />
+        <AssociationConnector Association="QLCHModel.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
