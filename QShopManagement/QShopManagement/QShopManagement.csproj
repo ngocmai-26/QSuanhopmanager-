@@ -51,6 +51,48 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DTO\UC\loadding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\loadding.Designer.cs">
+      <DependentUpon>loadding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCProductManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCProductManager.Designer.cs">
+      <DependentUpon>UCProductManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCProviderManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCProviderManager.Designer.cs">
+      <DependentUpon>UCProviderManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCStaffManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCStaffManager.Designer.cs">
+      <DependentUpon>UCStaffManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCUserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCUserManager.Designer.cs">
+      <DependentUpon>UCUserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmControl.Designer.cs">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UI\frmDMHH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -95,6 +137,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DTO\UC\loadding.resx">
+      <DependentUpon>loadding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
+      <DependentUpon>UCProductManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCProviderManager.resx">
+      <DependentUpon>UCProviderManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCStaffManager.resx">
+      <DependentUpon>UCStaffManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCUserManager.resx">
+      <DependentUpon>UCUserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmControl.resx">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmDMHH.resx">
       <DependentUpon>frmDMHH.cs</DependentUpon>
     </EmbeddedResource>
@@ -141,7 +204,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="DTO\UC\" />
     <Folder Include="MODEL\DAO\" />
     <Folder Include="MODEL\EF\" />
   </ItemGroup>
@@ -177,6 +239,45 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
