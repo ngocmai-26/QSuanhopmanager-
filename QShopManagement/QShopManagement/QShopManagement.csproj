@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{918698D7-CF46-40CD-BD82-92C25365C7F8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>QShopManagement</RootNamespace>
+    <AssemblyName>QShopManagement</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DTO\UC\loadding.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\loadding.Designer.cs">
+      <DependentUpon>loadding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCDashboard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCDashboard.Designer.cs">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCProductManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCProductManager.Designer.cs">
+      <DependentUpon>UCProductManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCProviderManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCProviderManager.Designer.cs">
+      <DependentUpon>UCProviderManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCStaffManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCStaffManager.Designer.cs">
+      <DependentUpon>UCStaffManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCUserManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCUserManager.Designer.cs">
+      <DependentUpon>UCUserManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmControl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmControl.Designer.cs">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmDMHH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmDMHH.Designer.cs">
+      <DependentUpon>frmDMHH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmHoaDon.Designer.cs">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLCH.Designer.cs">
+      <DependentUpon>frmQLCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLNCC.Designer.cs">
+      <DependentUpon>frmQLNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLNV.Designer.cs">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLTK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmQLTK.Designer.cs">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DTO\UC\loadding.resx">
+      <DependentUpon>loadding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
+      <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
+      <DependentUpon>UCProductManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCProviderManager.resx">
+      <DependentUpon>UCProviderManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCStaffManager.resx">
+      <DependentUpon>UCStaffManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCUserManager.resx">
+      <DependentUpon>UCUserManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmControl.resx">
+      <DependentUpon>frmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmDMHH.resx">
+      <DependentUpon>frmDMHH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmHoaDon.resx">
+      <DependentUpon>frmHoaDon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmQLCH.resx">
+      <DependentUpon>frmQLCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmQLNCC.resx">
+      <DependentUpon>frmQLNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmQLNV.resx">
+      <DependentUpon>frmQLNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmQLTK.resx">
+      <DependentUpon>frmQLTK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="MODEL\DAO\" />
+    <Folder Include="MODEL\EF\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\258339045_392196179303007_6450734899595293411_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Microsoft_Windows_11_Abstract_Shape_V6_Wallpaper_1920x1080_fh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa de trabajo 1 copia%404x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Mesa de trabajo 1 copia%404x1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo Project AM.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %285%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiple-users-silhouette.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hotel-supplier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\product-management.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %286%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user %287%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\service.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
