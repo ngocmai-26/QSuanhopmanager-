@@ -57,11 +57,23 @@
     <Compile Include="DTO\UC\loadding.Designer.cs">
       <DependentUpon>loadding.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UC\UCBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCBill.Designer.cs">
+      <DependentUpon>UCBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UC\UCDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DTO\UC\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBill.Designer.cs">
+      <DependentUpon>UCImportBill.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UC\UCProductManager.cs">
       <SubType>UserControl</SubType>
@@ -140,8 +152,14 @@
     <EmbeddedResource Include="DTO\UC\loadding.resx">
       <DependentUpon>loadding.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCBill.resx">
+      <DependentUpon>UCBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCImportBill.resx">
+      <DependentUpon>UCImportBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
       <DependentUpon>UCProductManager.cs</DependentUpon>
@@ -278,6 +296,30 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\formICON-300x300.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Screenshot 2021-12-09 193201.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %283%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %284%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\invoice.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

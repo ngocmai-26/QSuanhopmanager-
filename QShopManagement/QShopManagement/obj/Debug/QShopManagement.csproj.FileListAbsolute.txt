@@ -40,3 +40,12 @@ C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProductManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProviderManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCDashboard.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.loadding.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCBill.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCDashboard.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCImportBill.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProductManager.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCProviderManager.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCStaffManager.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCUserManager.resources
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmControl.resources
