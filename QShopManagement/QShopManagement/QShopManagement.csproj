@@ -100,47 +100,11 @@
     <Compile Include="DTO\UI\frmControl.Designer.cs">
       <DependentUpon>frmControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmDMHH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmDMHH.Designer.cs">
-      <DependentUpon>frmDMHH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmHoaDon.Designer.cs">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="DTO\UI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTO\UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLCH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLCH.Designer.cs">
-      <DependentUpon>frmQLCH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLNCC.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLNCC.Designer.cs">
-      <DependentUpon>frmQLNCC.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLNV.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLNV.Designer.cs">
-      <DependentUpon>frmQLNV.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLTK.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmQLTK.Designer.cs">
-      <DependentUpon>frmQLTK.cs</DependentUpon>
     </Compile>
     <Compile Include="MODEL\DAO\BaseDao.cs" />
     <Compile Include="MODEL\DAO\IBaseDao.cs" />
@@ -214,26 +178,8 @@
     <EmbeddedResource Include="DTO\UI\frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmDMHH.resx">
-      <DependentUpon>frmDMHH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmHoaDon.resx">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLCH.resx">
-      <DependentUpon>frmQLCH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLNCC.resx">
-      <DependentUpon>frmQLNCC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLNV.resx">
-      <DependentUpon>frmQLNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLTK.resx">
-      <DependentUpon>frmQLTK.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
