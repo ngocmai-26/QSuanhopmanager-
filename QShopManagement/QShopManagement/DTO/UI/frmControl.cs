@@ -31,6 +31,8 @@ namespace QShopManagement.DTO.UI
         UCProductManager productM;
         UCProviderManager providerM;
         UCStaffManager staffM;
+        UCBill billM;
+        UCImportBill importBillM;
         bool isVoken = false;
         UCDashboard dash;
         public frmControl()
@@ -41,7 +43,10 @@ namespace QShopManagement.DTO.UI
             staffM = new UCStaffManager();
             productM = new UCProductManager();
             providerM = new UCProviderManager();
-            LoadDashboard();
+            billM = new UCBill();
+            importBillM = new UCImportBill();
+            plnContent.Controls.Clear();
+            plnContent.Controls.Add(dash);
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 16, 16));*/
         }
 
@@ -68,6 +73,119 @@ namespace QShopManagement.DTO.UI
             pnlNavActive.Location = new Point(0, btnStaffManager.Location.Y);
             AddLoadding();
             staffThread.Start();
+
+        }
+       
+        private void btnAccountManager_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(LoadUserManagerControl);
+            th.IsBackground = true;
+            pnlNavActive.Height = btnAccountManager.Height + 10;
+            pnlNavActive.Location = new Point(0, btnAccountManager.Location.Y);
+            AddLoadding();
+            th.Start();
+
+        }
+        
+        private void btnProviderManager_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(LoadProviderManagerControl);
+            pnlNavActive.Height = btnProviderManager.Height + 10;
+            pnlNavActive.Location = new Point(0, btnProviderManager.Location.Y);
+            AddLoadding();
+            th.Start();
+        }
+
+        private void btnProductManager_Click(object sender, EventArgs e)
+        {
+            Thread th = new Thread(LoadProductManagerControl);
+            pnlNavActive.Height = btnProductManager.Height + 10;
+            pnlNavActive.Location = new Point(0, btnProductManager.Location.Y);
+            AddLoadding();
+            th.Start();
+        }
+
+        private void plnContent_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void ctbClosed_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btnBills_Click(object sender, EventArgs e)
+        {
+            // tao  luong moi 
+            // luong nay chay song song voi luong main
+            pnlNavActive.Height = btnBills.Height + 10;
+            pnlNavActive.Location = new Point(0, btnBills.Location.Y);
+            Thread th = new Thread(LoadBillManageControl);
+            th.IsBackground = true;
+            AddLoadding();
+            // add loading
+            th.Start();
+        }
+
+
+
+        private void btnImportBills_Click(object sender, EventArgs e)
+        {
+            pnlNavActive.Height = btnImportBills.Height + 10;
+            pnlNavActive.Location = new Point(0, btnImportBills.Location.Y);
+            Thread th = new Thread(LoadIMportBillManagerControl);
+            th.IsBackground = true;
+            AddLoadding();
+            th.Start();
+        }
+
+        void LoadIMportBillManagerControl() {
+            //add control
+            try
+            {
+                if (!isVoken)
+                {
+                    Thread.Sleep(3000);
+                    // delay to loadding animate
+                }
+                if (plnContent.InvokeRequired)// check thread overload
+                {
+                    isVoken = true;
+                    plnContent.Invoke(new Action(LoadIMportBillManagerControl));
+                    return;
+                }
+                plnContent.Controls.Clear();
+                plnContent.Controls.Add(importBillM);
+            }
+            catch
+            {
+                MessageBox.Show("Some err when loading");
+            }
+
+        }
+        void LoadBillManageControl() {
+
+            try
+            {
+
+                if (!isVoken)
+                {
+                    Thread.Sleep(3000);
+                }
+                if (plnContent.InvokeRequired)
+                {
+                    isVoken = true;
+                    plnContent.Invoke(new Action(LoadBillManageControl));
+                    return;
+                }
+                plnContent.Controls.Clear();
+                plnContent.Controls.Add(billM);
+            }
+            catch
+            {
+                MessageBox.Show("Some err when loading");
+            }
 
         }
         void LoadStaffManagerControl()
@@ -102,7 +220,7 @@ namespace QShopManagement.DTO.UI
                 {
                     Thread.Sleep(3000);
                 }
-                
+
                 if (plnContent.InvokeRequired)
                 {
                     isVoken = true;
@@ -116,7 +234,7 @@ namespace QShopManagement.DTO.UI
             {
                 MessageBox.Show("Some err when loading");
             }
-            
+
         }
         void LoadProviderManagerControl()
         {
@@ -190,7 +308,8 @@ namespace QShopManagement.DTO.UI
                 MessageBox.Show("Some err when loading");
             }
         }
-        void AddLoadding() {
+        void AddLoadding()
+        {
 
             plnContent.Controls.Clear();
             loadding load = new loadding();
@@ -199,43 +318,7 @@ namespace QShopManagement.DTO.UI
             plnContent.Controls.Add(load);
 
         }
-        private void btnAccountManager_Click(object sender, EventArgs e)
-        {
-            Thread th = new Thread(LoadUserManagerControl);
-            th.IsBackground = true;
-            pnlNavActive.Height = btnAccountManager.Height + 10;
-            pnlNavActive.Location = new Point(0, btnAccountManager.Location.Y);
-            AddLoadding();
-            th.Start();
 
-        }
         
-        private void btnProviderManager_Click(object sender, EventArgs e)
-        {
-            Thread th = new Thread(LoadProviderManagerControl);
-            pnlNavActive.Height = btnProviderManager.Height + 10;
-            pnlNavActive.Location = new Point(0, btnProviderManager.Location.Y);
-            AddLoadding();
-            th.Start();
-        }
-
-        private void btnProductManager_Click(object sender, EventArgs e)
-        {
-            Thread th = new Thread(LoadProductManagerControl);
-            pnlNavActive.Height = btnProductManager.Height + 10;
-            pnlNavActive.Location = new Point(0, btnProductManager.Location.Y);
-            AddLoadding();
-            th.Start();
-        }
-
-        private void plnContent_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void ctbClosed_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
     }
 }

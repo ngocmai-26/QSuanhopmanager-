@@ -29,9 +29,9 @@ namespace QShopManagement.DTO.UC
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
@@ -58,13 +58,13 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(463, 27);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(347, 22);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(269, 32);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(229, 27);
             this.guna2HtmlLabel1.TabIndex = 4;
             this.guna2HtmlLabel1.Text = "Hóa Đơn Khách Hàng";
             // 
@@ -83,14 +83,13 @@ namespace QShopManagement.DTO.UC
             this.txtMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaNV.HoverState.Parent = this.txtMaNV;
-            this.txtMaNV.Location = new System.Drawing.Point(40, 31);
-            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
+            this.txtMaNV.Location = new System.Drawing.Point(30, 25);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.PasswordChar = '\0';
             this.txtMaNV.PlaceholderText = "Mã Khách Hàng";
             this.txtMaNV.SelectedText = "";
             this.txtMaNV.ShadowDecoration.Parent = this.txtMaNV;
-            this.txtMaNV.Size = new System.Drawing.Size(332, 44);
+            this.txtMaNV.Size = new System.Drawing.Size(249, 36);
             this.txtMaNV.TabIndex = 5;
             this.txtMaNV.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -109,14 +108,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(40, 108);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox1.Location = new System.Drawing.Point(30, 88);
             this.guna2TextBox1.Name = "guna2TextBox1";
             this.guna2TextBox1.PasswordChar = '\0';
             this.guna2TextBox1.PlaceholderText = "Tên Khách Hàng";
             this.guna2TextBox1.SelectedText = "";
             this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox1.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox1.TabIndex = 6;
             this.guna2TextBox1.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -135,14 +133,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(40, 191);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox2.Location = new System.Drawing.Point(30, 155);
             this.guna2TextBox2.Name = "guna2TextBox2";
             this.guna2TextBox2.PasswordChar = '\0';
             this.guna2TextBox2.PlaceholderText = "SDT";
             this.guna2TextBox2.SelectedText = "";
             this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox2.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox2.TabIndex = 7;
             this.guna2TextBox2.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -161,14 +158,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(457, 31);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox3.Location = new System.Drawing.Point(343, 25);
             this.guna2TextBox3.Name = "guna2TextBox3";
             this.guna2TextBox3.PasswordChar = '\0';
             this.guna2TextBox3.PlaceholderText = "Mã Nhân Viên";
             this.guna2TextBox3.SelectedText = "";
             this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox3.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox3.TabIndex = 10;
             this.guna2TextBox3.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -187,14 +183,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox8.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox8.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox8.HoverState.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Location = new System.Drawing.Point(868, 191);
-            this.guna2TextBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox8.Location = new System.Drawing.Point(651, 155);
             this.guna2TextBox8.Name = "guna2TextBox8";
             this.guna2TextBox8.PasswordChar = '\0';
             this.guna2TextBox8.PlaceholderText = "Tổng Tiền";
             this.guna2TextBox8.SelectedText = "";
             this.guna2TextBox8.ShadowDecoration.Parent = this.guna2TextBox8;
-            this.guna2TextBox8.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox8.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox8.TabIndex = 14;
             this.guna2TextBox8.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -213,14 +208,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox9.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox9.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox9.HoverState.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Location = new System.Drawing.Point(457, 108);
-            this.guna2TextBox9.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox9.Location = new System.Drawing.Point(343, 88);
             this.guna2TextBox9.Name = "guna2TextBox9";
             this.guna2TextBox9.PasswordChar = '\0';
             this.guna2TextBox9.PlaceholderText = "Mã Sản Phẩm";
             this.guna2TextBox9.SelectedText = "";
             this.guna2TextBox9.ShadowDecoration.Parent = this.guna2TextBox9;
-            this.guna2TextBox9.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox9.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox9.TabIndex = 14;
             this.guna2TextBox9.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -239,14 +233,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox10.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox10.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox10.HoverState.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Location = new System.Drawing.Point(868, 31);
-            this.guna2TextBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox10.Location = new System.Drawing.Point(651, 25);
             this.guna2TextBox10.Name = "guna2TextBox10";
             this.guna2TextBox10.PasswordChar = '\0';
             this.guna2TextBox10.PlaceholderText = "Size";
             this.guna2TextBox10.SelectedText = "";
             this.guna2TextBox10.ShadowDecoration.Parent = this.guna2TextBox10;
-            this.guna2TextBox10.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox10.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox10.TabIndex = 15;
             this.guna2TextBox10.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -265,14 +258,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox11.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox11.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox11.HoverState.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Location = new System.Drawing.Point(868, 108);
-            this.guna2TextBox11.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox11.Location = new System.Drawing.Point(651, 88);
             this.guna2TextBox11.Name = "guna2TextBox11";
             this.guna2TextBox11.PasswordChar = '\0';
             this.guna2TextBox11.PlaceholderText = "Số lượng";
             this.guna2TextBox11.SelectedText = "";
             this.guna2TextBox11.ShadowDecoration.Parent = this.guna2TextBox11;
-            this.guna2TextBox11.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox11.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox11.TabIndex = 16;
             this.guna2TextBox11.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -291,14 +283,13 @@ namespace QShopManagement.DTO.UC
             this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(457, 191);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2TextBox4.Location = new System.Drawing.Point(343, 155);
             this.guna2TextBox4.Name = "guna2TextBox4";
             this.guna2TextBox4.PasswordChar = '\0';
             this.guna2TextBox4.PlaceholderText = "Giá Tiền";
             this.guna2TextBox4.SelectedText = "";
             this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(332, 44);
+            this.guna2TextBox4.Size = new System.Drawing.Size(249, 36);
             this.guna2TextBox4.TabIndex = 17;
             this.guna2TextBox4.TextOffset = new System.Drawing.Point(10, 0);
             // 
@@ -318,50 +309,48 @@ namespace QShopManagement.DTO.UC
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
             this.btnAdd.IndicateFocus = true;
-            this.btnAdd.Location = new System.Drawing.Point(1071, 261);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.btnAdd.Location = new System.Drawing.Point(803, 212);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
-            this.btnAdd.Size = new System.Drawing.Size(129, 42);
+            this.btnAdd.Size = new System.Drawing.Size(97, 34);
             this.btnAdd.TabIndex = 18;
             this.btnAdd.Text = "Xuất hóa đơn";
             this.btnAdd.UseTransparentBackground = true;
             // 
             // dgvStaffs
             // 
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.dgvStaffs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvStaffs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvStaffs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvStaffs.BackgroundColor = System.Drawing.Color.White;
             this.dgvStaffs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStaffs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStaffs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStaffs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStaffs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvStaffs.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStaffs.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStaffs.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStaffs.EnableHeadersVisualStyles = false;
             this.dgvStaffs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvStaffs.Location = new System.Drawing.Point(40, 17);
-            this.dgvStaffs.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvStaffs.Location = new System.Drawing.Point(30, 14);
             this.dgvStaffs.Name = "dgvStaffs";
             this.dgvStaffs.RowHeadersVisible = false;
             this.dgvStaffs.RowHeadersWidth = 51;
             this.dgvStaffs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvStaffs.Size = new System.Drawing.Size(980, 295);
+            this.dgvStaffs.Size = new System.Drawing.Size(735, 240);
             this.dgvStaffs.TabIndex = 19;
             this.dgvStaffs.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvStaffs.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -402,11 +391,10 @@ namespace QShopManagement.DTO.UC
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.HoverState.Parent = this.btnUpdate;
             this.btnUpdate.IndicateFocus = true;
-            this.btnUpdate.Location = new System.Drawing.Point(1074, 49);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
+            this.btnUpdate.Location = new System.Drawing.Point(806, 40);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
-            this.btnUpdate.Size = new System.Drawing.Size(129, 42);
+            this.btnUpdate.Size = new System.Drawing.Size(97, 34);
             this.btnUpdate.TabIndex = 20;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseTransparentBackground = true;
@@ -428,11 +416,10 @@ namespace QShopManagement.DTO.UC
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.HoverState.Parent = this.btnRemove;
             this.btnRemove.IndicateFocus = true;
-            this.btnRemove.Location = new System.Drawing.Point(1074, 131);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
+            this.btnRemove.Location = new System.Drawing.Point(806, 106);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.ShadowDecoration.Parent = this.btnRemove;
-            this.btnRemove.Size = new System.Drawing.Size(129, 42);
+            this.btnRemove.Size = new System.Drawing.Size(97, 34);
             this.btnRemove.TabIndex = 21;
             this.btnRemove.Text = "Xóa";
             this.btnRemove.UseTransparentBackground = true;
@@ -454,11 +441,10 @@ namespace QShopManagement.DTO.UC
             this.btnSave.ForeColor = System.Drawing.Color.White;
             this.btnSave.HoverState.Parent = this.btnSave;
             this.btnSave.IndicateFocus = true;
-            this.btnSave.Location = new System.Drawing.Point(1074, 270);
-            this.btnSave.Margin = new System.Windows.Forms.Padding(4);
+            this.btnSave.Location = new System.Drawing.Point(806, 219);
             this.btnSave.Name = "btnSave";
             this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(129, 42);
+            this.btnSave.Size = new System.Drawing.Size(97, 34);
             this.btnSave.TabIndex = 22;
             this.btnSave.Text = "Lưu";
             this.btnSave.UseTransparentBackground = true;
@@ -467,9 +453,10 @@ namespace QShopManagement.DTO.UC
             // 
             this.guna2Panel1.Controls.Add(this.dgvStaffs);
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1048, 348);
+            this.guna2Panel1.Size = new System.Drawing.Size(786, 283);
             this.guna2Panel1.TabIndex = 23;
             // 
             // guna2Panel2
@@ -478,10 +465,11 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel2.Controls.Add(this.btnUpdate);
             this.guna2Panel2.Controls.Add(this.btnSave);
             this.guna2Panel2.Controls.Add(this.btnRemove);
-            this.guna2Panel2.Location = new System.Drawing.Point(3, 387);
+            this.guna2Panel2.Location = new System.Drawing.Point(2, 314);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(1264, 348);
+            this.guna2Panel2.Size = new System.Drawing.Size(948, 283);
             this.guna2Panel2.TabIndex = 24;
             // 
             // guna2Panel3
@@ -496,27 +484,28 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel3.Controls.Add(this.guna2TextBox9);
             this.guna2Panel3.Controls.Add(this.guna2TextBox2);
             this.guna2Panel3.Controls.Add(this.guna2TextBox4);
-            this.guna2Panel3.Location = new System.Drawing.Point(3, 77);
+            this.guna2Panel3.Location = new System.Drawing.Point(2, 63);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.guna2Panel3.Name = "guna2Panel3";
             this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1264, 313);
+            this.guna2Panel3.Size = new System.Drawing.Size(948, 254);
             this.guna2Panel3.TabIndex = 25;
             // 
             // UCBill
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.guna2Panel3);
             this.Controls.Add(this.guna2Panel2);
             this.Controls.Add(this.guna2HtmlLabel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "UCBill";
-            this.Size = new System.Drawing.Size(1267, 735);
+            this.Size = new System.Drawing.Size(950, 597);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffs)).EndInit();
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

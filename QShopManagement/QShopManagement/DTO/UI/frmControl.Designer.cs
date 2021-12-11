@@ -29,6 +29,7 @@ namespace QShopManagement.DTO.UI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmControl));
             this.plnNav = new Guna.UI2.WinForms.Guna2Panel();
             this.btnLogout = new Guna.UI2.WinForms.Guna2CircleButton();
             this.pnlNavActive = new Guna.UI2.WinForms.Guna2Panel();
@@ -45,6 +46,8 @@ namespace QShopManagement.DTO.UI
             this.dtpTime = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btnBills = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.btnImportBills = new Guna.UI2.WinForms.Guna2CircleButton();
             this.plnNav.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.plnTopNav.SuspendLayout();
@@ -55,6 +58,8 @@ namespace QShopManagement.DTO.UI
             // plnNav
             // 
             this.plnNav.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.plnNav.Controls.Add(this.btnImportBills);
+            this.plnNav.Controls.Add(this.btnBills);
             this.plnNav.Controls.Add(this.btnLogout);
             this.plnNav.Controls.Add(this.pnlNavActive);
             this.plnNav.Controls.Add(this.btnProductManager);
@@ -124,7 +129,7 @@ namespace QShopManagement.DTO.UI
             this.btnProductManager.ForeColor = System.Drawing.Color.White;
             this.btnProductManager.HoverState.Parent = this.btnProductManager;
             this.btnProductManager.Image = global::QShopManagement.Properties.Resources.product_management;
-            this.btnProductManager.Location = new System.Drawing.Point(18, 415);
+            this.btnProductManager.Location = new System.Drawing.Point(18, 345);
             this.btnProductManager.Name = "btnProductManager";
             this.btnProductManager.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnProductManager.ShadowDecoration.Parent = this.btnProductManager;
@@ -150,7 +155,7 @@ namespace QShopManagement.DTO.UI
             this.btnProviderManager.ForeColor = System.Drawing.Color.White;
             this.btnProviderManager.HoverState.Parent = this.btnProviderManager;
             this.btnProviderManager.Image = global::QShopManagement.Properties.Resources.hotel_supplier;
-            this.btnProviderManager.Location = new System.Drawing.Point(18, 357);
+            this.btnProviderManager.Location = new System.Drawing.Point(18, 287);
             this.btnProviderManager.Name = "btnProviderManager";
             this.btnProviderManager.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnProviderManager.ShadowDecoration.Parent = this.btnProviderManager;
@@ -176,7 +181,7 @@ namespace QShopManagement.DTO.UI
             this.btnStaffManager.ForeColor = System.Drawing.Color.White;
             this.btnStaffManager.HoverState.Parent = this.btnStaffManager;
             this.btnStaffManager.Image = global::QShopManagement.Properties.Resources.multiple_users_silhouette;
-            this.btnStaffManager.Location = new System.Drawing.Point(18, 238);
+            this.btnStaffManager.Location = new System.Drawing.Point(18, 168);
             this.btnStaffManager.Name = "btnStaffManager";
             this.btnStaffManager.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnStaffManager.ShadowDecoration.Parent = this.btnStaffManager;
@@ -203,7 +208,7 @@ namespace QShopManagement.DTO.UI
             this.btnAccountManager.HoverState.Parent = this.btnAccountManager;
             this.btnAccountManager.Image = global::QShopManagement.Properties.Resources.user__6_;
             this.btnAccountManager.ImageOffset = new System.Drawing.Point(1, 0);
-            this.btnAccountManager.Location = new System.Drawing.Point(18, 297);
+            this.btnAccountManager.Location = new System.Drawing.Point(18, 227);
             this.btnAccountManager.Name = "btnAccountManager";
             this.btnAccountManager.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnAccountManager.ShadowDecoration.Parent = this.btnAccountManager;
@@ -231,7 +236,7 @@ namespace QShopManagement.DTO.UI
             this.btnDashboard.Image = global::QShopManagement.Properties.Resources.home;
             this.btnDashboard.ImageOffset = new System.Drawing.Point(0, -1);
             this.btnDashboard.IndicateFocus = true;
-            this.btnDashboard.Location = new System.Drawing.Point(18, 177);
+            this.btnDashboard.Location = new System.Drawing.Point(18, 107);
             this.btnDashboard.Name = "btnDashboard";
             this.btnDashboard.Padding = new System.Windows.Forms.Padding(14);
             this.btnDashboard.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -388,6 +393,60 @@ namespace QShopManagement.DTO.UI
             this.txtSearch.TabIndex = 0;
             this.txtSearch.TextOffset = new System.Drawing.Point(20, 0);
             // 
+            // btnBills
+            // 
+            this.btnBills.Animated = true;
+            this.btnBills.BackColor = System.Drawing.Color.Transparent;
+            this.btnBills.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnBills.CheckedState.Parent = this.btnBills;
+            this.btnBills.CustomImages.Parent = this.btnBills;
+            this.btnBills.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnBills.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnBills.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnBills.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnBills.DisabledState.Parent = this.btnBills;
+            this.btnBills.FillColor = System.Drawing.Color.Transparent;
+            this.btnBills.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnBills.ForeColor = System.Drawing.Color.White;
+            this.btnBills.HoverState.Parent = this.btnBills;
+            this.btnBills.Image = ((System.Drawing.Image)(resources.GetObject("btnBills.Image")));
+            this.btnBills.ImageOffset = new System.Drawing.Point(-1, 0);
+            this.btnBills.Location = new System.Drawing.Point(18, 403);
+            this.btnBills.Name = "btnBills";
+            this.btnBills.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnBills.ShadowDecoration.Parent = this.btnBills;
+            this.btnBills.Size = new System.Drawing.Size(39, 41);
+            this.btnBills.TabIndex = 9;
+            this.btnBills.UseTransparentBackground = true;
+            this.btnBills.Click += new System.EventHandler(this.btnBills_Click);
+            // 
+            // btnImportBills
+            // 
+            this.btnImportBills.Animated = true;
+            this.btnImportBills.BackColor = System.Drawing.Color.Transparent;
+            this.btnImportBills.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnImportBills.CheckedState.Parent = this.btnImportBills;
+            this.btnImportBills.CustomImages.Parent = this.btnImportBills;
+            this.btnImportBills.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnImportBills.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnImportBills.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnImportBills.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnImportBills.DisabledState.Parent = this.btnImportBills;
+            this.btnImportBills.FillColor = System.Drawing.Color.Transparent;
+            this.btnImportBills.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnImportBills.ForeColor = System.Drawing.Color.White;
+            this.btnImportBills.HoverState.Parent = this.btnImportBills;
+            this.btnImportBills.Image = ((System.Drawing.Image)(resources.GetObject("btnImportBills.Image")));
+            this.btnImportBills.ImageOffset = new System.Drawing.Point(1, 0);
+            this.btnImportBills.Location = new System.Drawing.Point(18, 461);
+            this.btnImportBills.Name = "btnImportBills";
+            this.btnImportBills.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.btnImportBills.ShadowDecoration.Parent = this.btnImportBills;
+            this.btnImportBills.Size = new System.Drawing.Size(39, 41);
+            this.btnImportBills.TabIndex = 10;
+            this.btnImportBills.UseTransparentBackground = true;
+            this.btnImportBills.Click += new System.EventHandler(this.btnImportBills_Click);
+            // 
             // frmControl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -429,5 +488,7 @@ namespace QShopManagement.DTO.UI
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private Guna.UI2.WinForms.Guna2DateTimePicker dtpTime;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
+        private Guna.UI2.WinForms.Guna2CircleButton btnImportBills;
+        private Guna.UI2.WinForms.Guna2CircleButton btnBills;
     }
 }

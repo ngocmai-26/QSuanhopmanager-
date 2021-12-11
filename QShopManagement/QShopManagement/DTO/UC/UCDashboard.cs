@@ -17,17 +17,16 @@ namespace QShopManagement.DTO.UC
             InitializeComponent();
         }
 
-        private void guna2CircleProgressBar4_ValueChanged(object sender, EventArgs e)
+        async void LoadData()
+        {
+
+        }
+        private void UCDashboard_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void guna2HtmlLabel20_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void guna2HtmlLabel25_Click(object sender, EventArgs e)
+        private void guna2Panel6_Paint(object sender, PaintEventArgs e)
         {
 
         }

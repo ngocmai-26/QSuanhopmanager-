@@ -73,59 +73,9 @@ namespace QShopManagement.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
-        internal static System.Drawing.Bitmap bill {
-            get {
-                object obj = ResourceManager.GetObject("bill", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bill__1_ {
-            get {
-                object obj = ResourceManager.GetObject("bill (1)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
         internal static System.Drawing.Bitmap bill__2_ {
             get {
                 object obj = ResourceManager.GetObject("bill (2)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bill__3_ {
-            get {
-                object obj = ResourceManager.GetObject("bill (3)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap bill__4_ {
-            get {
-                object obj = ResourceManager.GetObject("bill (4)", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap formICON_300x300 {
-            get {
-                object obj = ResourceManager.GetObject("formICON-300x300", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -146,16 +96,6 @@ namespace QShopManagement.Properties {
         internal static System.Drawing.Bitmap hotel_supplier {
             get {
                 object obj = ResourceManager.GetObject("hotel-supplier", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap invoice {
-            get {
-                object obj = ResourceManager.GetObject("invoice", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -226,16 +166,6 @@ namespace QShopManagement.Properties {
         internal static System.Drawing.Bitmap product_management {
             get {
                 object obj = ResourceManager.GetObject("product-management", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap Screenshot_2021_12_09_193201 {
-            get {
-                object obj = ResourceManager.GetObject("Screenshot 2021-12-09 193201", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
