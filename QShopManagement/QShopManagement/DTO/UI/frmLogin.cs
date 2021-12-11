@@ -7,14 +7,27 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using QShopManagement.MODEL.DAO;
+using QShopManagement.MODEL.EF;
+using QShopManagement.DTO.UI;
+using System.Threading;
+using QShopManagement.CONTROLLER;
 namespace QShopManagement.DTO.UI
 {
-    public partial class frmLogin : Form
+    public partial class frmLogin : Form    
     {
+       
+        LoginController loginCtrl;
         public frmLogin()
         {
             InitializeComponent();
+            loginCtrl = new LoginController();
+        }
+
+        private async void btnLogin_Click(object sender, EventArgs e)
+        {/*
+            loginCtrl.getInfo(txtUserName.Text, txtPassword.Text);
+            loginCtrl.ValidForLogin();*/
         }
     }
 }

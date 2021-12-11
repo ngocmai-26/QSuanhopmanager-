@@ -16,5 +16,19 @@ namespace QShopManagement.DTO.UC
         {
             InitializeComponent();
         }
+
+        async void LoadData()
+        {
+
+        }
+        private void UCDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2Panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

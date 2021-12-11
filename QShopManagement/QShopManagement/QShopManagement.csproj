@@ -33,10 +33,17 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2, Version=2.0.2.5, Culture=neutral, PublicKeyToken=e4b9cdd7b4cde4b4, processorArchitecture=MSIL">
       <HintPath>..\packages\Guna.UI2.WinForms.2.0.2.5\lib\net40\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -51,17 +58,31 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CONTROLLER\BaseController.cs" />
+    <Compile Include="CONTROLLER\LoginController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DTO\UC\loadding.Designer.cs">
       <DependentUpon>loadding.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UC\UCBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCBill.Designer.cs">
+      <DependentUpon>UCBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UC\UCDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="DTO\UC\UCDashboard.Designer.cs">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBill.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBill.Designer.cs">
+      <DependentUpon>UCImportBill.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UC\UCProductManager.cs">
       <SubType>UserControl</SubType>
@@ -93,55 +114,75 @@
     <Compile Include="DTO\UI\frmControl.Designer.cs">
       <DependentUpon>frmControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmDMHH.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmDMHH.Designer.cs">
-      <DependentUpon>frmDMHH.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UI\frmHoaDon.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DTO\UI\frmHoaDon.Designer.cs">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </Compile>
     <Compile Include="DTO\UI\frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTO\UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLCH.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MODEL\DAO\AuthenticateDao.cs" />
+    <Compile Include="MODEL\DAO\BaseDao.cs" />
+    <Compile Include="MODEL\DAO\IBaseDao.cs" />
+    <Compile Include="MODEL\DAO\IUserDao.cs" />
+    <Compile Include="MODEL\DAO\UserDao.cs" />
+    <Compile Include="MODEL\EF\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLCH.Designer.cs">
-      <DependentUpon>frmQLCH.cs</DependentUpon>
+    <Compile Include="MODEL\EF\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLNCC.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MODEL\EF\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLNCC.Designer.cs">
-      <DependentUpon>frmQLNCC.cs</DependentUpon>
+    <Compile Include="MODEL\EF\sysdiagram.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLNV.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MODEL\EF\tbl_CTHOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLNV.Designer.cs">
-      <DependentUpon>frmQLNV.cs</DependentUpon>
+    <Compile Include="MODEL\EF\tbl_CTPHIEUNHAP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLTK.cs">
-      <SubType>Form</SubType>
+    <Compile Include="MODEL\EF\tbl_HANGHOA.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UI\frmQLTK.Designer.cs">
-      <DependentUpon>frmQLTK.cs</DependentUpon>
+    <Compile Include="MODEL\EF\tbl_HOADON.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\EF\tbl_KHACHHANG.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\EF\tbl_NHACUNGCAP.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\EF\tbl_NHANVIEN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\EF\tbl_PHIEUNHAPKHO.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MODEL\EF\tbl_TAIKHOAN.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DTO\UC\loadding.resx">
       <DependentUpon>loadding.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCBill.resx">
+      <DependentUpon>UCBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCImportBill.resx">
+      <DependentUpon>UCImportBill.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
       <DependentUpon>UCProductManager.cs</DependentUpon>
@@ -158,42 +199,31 @@
     <EmbeddedResource Include="DTO\UI\frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmDMHH.resx">
-      <DependentUpon>frmDMHH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmHoaDon.resx">
-      <DependentUpon>frmHoaDon.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLCH.resx">
-      <DependentUpon>frmQLCH.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLNCC.resx">
-      <DependentUpon>frmQLNCC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLNV.resx">
-      <DependentUpon>frmQLNV.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UI\frmQLTK.resx">
-      <DependentUpon>frmQLTK.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EntityDeploy Include="MODEL\EF\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="MODEL\EF\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -203,10 +233,7 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="MODEL\DAO\" />
-    <Folder Include="MODEL\EF\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\258339045_392196179303007_6450734899595293411_n.jpg" />
   </ItemGroup>
@@ -278,6 +305,24 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\service.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MODEL\EF\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Content>
+    <Content Include="MODEL\EF\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
