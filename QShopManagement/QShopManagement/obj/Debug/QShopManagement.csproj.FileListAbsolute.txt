@@ -21,12 +21,6 @@ D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.cs
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.CopyComplete
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.exe
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.pdb
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmHoaDon.resources
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmQLNV.resources
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmQLTK.resources
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmQLNCC.resources
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmDMHH.resources
-D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmQLCH.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmControl.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCUserManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.loadding.resources
@@ -49,3 +43,8 @@ C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.dll
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.xml
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.dll
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.dll
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.xml
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.xml
+D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCBillManager.resources

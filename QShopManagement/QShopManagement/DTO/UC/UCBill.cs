@@ -16,5 +16,10 @@ namespace QShopManagement.DTO.UC
         {
             InitializeComponent();
         }
+
+        private void guna2HtmlLabel6_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

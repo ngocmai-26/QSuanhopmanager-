@@ -72,6 +72,12 @@
     <Compile Include="DTO\UC\UCBill.Designer.cs">
       <DependentUpon>UCBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UC\UCBillManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCBillManager.Designer.cs">
+      <DependentUpon>UCBillManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UC\UCDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +89,12 @@
     </Compile>
     <Compile Include="DTO\UC\UCImportBill.Designer.cs">
       <DependentUpon>UCImportBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBillManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBillManager.Designer.cs">
+      <DependentUpon>UCImportBillManager.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UC\UCProductManager.cs">
       <SubType>UserControl</SubType>
@@ -178,11 +190,17 @@
     <EmbeddedResource Include="DTO\UC\UCBill.resx">
       <DependentUpon>UCBill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCBillManager.resx">
+      <DependentUpon>UCBillManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCImportBill.resx">
       <DependentUpon>UCImportBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCImportBillManager.resx">
+      <DependentUpon>UCImportBillManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
       <DependentUpon>UCProductManager.cs</DependentUpon>
