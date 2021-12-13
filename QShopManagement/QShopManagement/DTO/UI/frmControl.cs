@@ -37,6 +37,7 @@ namespace QShopManagement.DTO.UI
         UCDashboard dash;
         UCBillManager billM;
         UCImportBillManager importBillM;
+        UCCustomersManager customerM;
         string role_;
         public frmControl(string role)
         {
@@ -50,6 +51,7 @@ namespace QShopManagement.DTO.UI
             providerM = new UCProviderManager();
             billM = new UCBillManager();
             importBillM = new UCImportBillManager();
+            customerM = new UCCustomersManager();
             plnContent.Controls.Clear();
             plnContent.Controls.Add(dash);
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 16, 16));*/
@@ -68,6 +70,7 @@ namespace QShopManagement.DTO.UI
             btnProductManager.Enabled = false;
             btnProviderManager.Enabled = false;
             btnStaffManager.Enabled = false;
+            btnCustomerManager.Enabled = false;
             if (role_.Equals("Ketoan")) {
                 btnBills.Enabled = true;
                 MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Kế Toán!");
@@ -85,6 +88,7 @@ namespace QShopManagement.DTO.UI
                 btnProductManager.Enabled = true;
                 btnProviderManager.Enabled = true;
                 btnStaffManager.Enabled = true;
+                btnCustomerManager.Enabled = true;
                 MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Quản Lý !");
 
 
@@ -188,6 +192,16 @@ namespace QShopManagement.DTO.UI
             th.Start();
         }
 
+
+        private void CustomerManager_Click(object sender, EventArgs e)
+        {
+            pnlNavActive.Height = btnCustomerManager.Height + 10;
+            pnlNavActive.Location = new Point(0, btnCustomerManager.Location.Y);
+            Thread th = new Thread(LoadCustomerManagerControl);
+            th.IsBackground = true;
+            AddLoadding();
+            th.Start();
+        }
         void LoadIMportBillManagerControl() {
             //add control
             try
@@ -332,6 +346,30 @@ namespace QShopManagement.DTO.UI
                 MessageBox.Show("Some err when loading");
             }
         }
+        void LoadCustomerManagerControl()
+        {
+            try
+            {
+
+                if (!isVoken)
+                {
+                    Thread.Sleep(3000);
+                }
+
+                if (plnContent.InvokeRequired)
+                {
+                    isVoken = true;
+                    plnContent.Invoke(new Action(LoadCustomerManagerControl));
+                    return;
+                }
+                plnContent.Controls.Clear();
+                plnContent.Controls.Add(customerM);
+            }
+            catch
+            {
+                MessageBox.Show("Some err when loading");
+            }
+        }
         void LoadProductManagerControl()
         {
             try
@@ -374,5 +412,6 @@ namespace QShopManagement.DTO.UI
                 this.Close();
             }
         }
+
     }
 }
