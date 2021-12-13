@@ -27,7 +27,6 @@ namespace QShopManagement.MODEL.EF
         public string Size { get; set; }
         public int Gia { get; set; }
         public int Soluong { get; set; }
-        public System.DateTime Ngaynhap { get; set; }
         public int SoluongTon { get; set; }
         public string MaNCC { get; set; }
     

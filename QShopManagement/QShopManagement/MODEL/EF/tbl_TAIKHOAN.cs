@@ -19,6 +19,7 @@ namespace QShopManagement.MODEL.EF
         public string Password { get; set; }
         public string HieuLuc { get; set; }
         public string MSNV { get; set; }
+        public string role { get; set; }
     
         public virtual tbl_NHANVIEN tbl_NHANVIEN { get; set; }
     }

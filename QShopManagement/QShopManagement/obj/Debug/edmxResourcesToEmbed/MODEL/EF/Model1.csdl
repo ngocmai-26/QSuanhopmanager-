@@ -15,12 +15,11 @@
       <PropertyRef Name="MaHH" />
     </Key>
     <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TenHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenHH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
     <Property Name="Loaivai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
     <Property Name="Gia" Type="Int32" Nullable="false" />
     <Property Name="Soluong" Type="Int32" Nullable="false" />
-    <Property Name="Ngaynhap" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="SoluongTon" Type="Int32" Nullable="false" />
     <Property Name="MaNCC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="tbl_CTHOADON" Relationship="Self.FK_tbl_CTHOADON_tbl_HANGHOA" FromRole="tbl_HANGHOA" ToRole="tbl_CTHOADON" />
@@ -44,7 +43,7 @@
       <PropertyRef Name="MaKH" />
     </Key>
     <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-    <Property Name="TenKH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="tbl_HOADON" Relationship="Self.FK_tbl_HOADON_tbl_KHACHHANG" FromRole="tbl_KHACHHANG" ToRole="tbl_HOADON" />
@@ -57,7 +56,7 @@
     <Property Name="TenNCC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SDT" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-    <Property Name="LoaiHang" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+    <Property Name="LoaiHang" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_HANGHOA_tbl_NHACUNGCAP" FromRole="tbl_NHACUNGCAP" ToRole="tbl_HANGHOA" />
   </EntityType>
   <EntityType Name="tbl_NHANVIEN">
@@ -92,6 +91,7 @@
     <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="HieuLuc" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="MSNV" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="role" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="tbl_NHANVIEN" Relationship="Self.FK_tbl_TAIKHOAN_tbl_NHANVIEN" FromRole="tbl_TAIKHOAN" ToRole="tbl_NHANVIEN" />
   </EntityType>
   <EntityType Name="tbl_CTHOADON">
@@ -99,10 +99,12 @@
       <PropertyRef Name="MaHD" />
       <PropertyRef Name="MaHH" />
       <PropertyRef Name="Soluong" />
+      <PropertyRef Name="size" />
     </Key>
     <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="Soluong" Type="Int32" Nullable="false" />
+    <Property Name="size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
     <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTHOADON_tbl_HANGHOA" FromRole="tbl_CTHOADON" ToRole="tbl_HANGHOA" />
     <NavigationProperty Name="tbl_HOADON" Relationship="Self.FK_tbl_CTHOADON_tbl_HOADON" FromRole="tbl_CTHOADON" ToRole="tbl_HOADON" />
   </EntityType>
@@ -117,6 +119,7 @@
     <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
     <Property Name="SLNhap" Type="Int32" Nullable="false" />
     <Property Name="DonGiaNhap" Type="Int32" Nullable="false" />
+    <Property Name="size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
     <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_HANGHOA" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_HANGHOA" />
     <NavigationProperty Name="tbl_PHIEUNHAPKHO" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_PHIEUNHAPKHO" />
   </EntityType>

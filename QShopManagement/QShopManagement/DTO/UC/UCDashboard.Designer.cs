@@ -30,56 +30,56 @@ namespace QShopManagement.DTO.UC
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Guna.UI2.AnimatorNS.Animation animation8 = new Guna.UI2.AnimatorNS.Animation();
+            Guna.UI2.AnimatorNS.Animation animation2 = new Guna.UI2.AnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCDashboard));
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel10 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox4 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel29 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel30 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalCustomer = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel7 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2CirclePictureBox3 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2HtmlLabel27 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel26 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCtBill = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel6 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel23 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCapital = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel24 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton6 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2CircleProgressBar5 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.guna2CircleProgressBar4 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.guna2CircleProgressBar2 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
-            this.guna2HtmlLabel22 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel20 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTime3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblLoss = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel19 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton5 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2HtmlLabel21 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel18 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblIncome = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel17 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton3 = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel15 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel16 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbltotalProvider = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox2 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lbltotalUser = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel11 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTotalStaff = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel12 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton4 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2HtmlLabel13 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTime2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel14 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleProgressBar3 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblexport = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton2 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblImport = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleButton1 = new Guna.UI2.WinForms.Guna2CircleButton();
-            this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblTime1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2CircleProgressBar1 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
             this.guna2CircleProgressBar6 = new Guna.UI2.WinForms.Guna2CircleProgressBar();
@@ -132,12 +132,13 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
             this.guna2Panel1.Size = new System.Drawing.Size(950, 494);
             this.guna2Panel1.TabIndex = 1;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // guna2Panel10
             // 
             this.guna2Panel10.Controls.Add(this.guna2CirclePictureBox4);
             this.guna2Panel10.Controls.Add(this.guna2HtmlLabel29);
-            this.guna2Panel10.Controls.Add(this.guna2HtmlLabel30);
+            this.guna2Panel10.Controls.Add(this.lblTotalCustomer);
             this.guna2Transition1.SetDecoration(this.guna2Panel10, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel10.Location = new System.Drawing.Point(627, 371);
             this.guna2Panel10.Name = "guna2Panel10";
@@ -171,23 +172,23 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel29.TabIndex = 16;
             this.guna2HtmlLabel29.Text = "Tổng Số Khách Hàng";
             // 
-            // guna2HtmlLabel30
+            // lblTotalCustomer
             // 
-            this.guna2HtmlLabel30.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel30, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel30.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel30.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel30.Location = new System.Drawing.Point(92, 18);
-            this.guna2HtmlLabel30.Name = "guna2HtmlLabel30";
-            this.guna2HtmlLabel30.Size = new System.Drawing.Size(48, 35);
-            this.guna2HtmlLabel30.TabIndex = 12;
-            this.guna2HtmlLabel30.Text = "200";
+            this.lblTotalCustomer.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblTotalCustomer, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblTotalCustomer.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalCustomer.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblTotalCustomer.Location = new System.Drawing.Point(92, 18);
+            this.lblTotalCustomer.Name = "lblTotalCustomer";
+            this.lblTotalCustomer.Size = new System.Drawing.Size(48, 35);
+            this.lblTotalCustomer.TabIndex = 12;
+            this.lblTotalCustomer.Text = "200";
             // 
             // guna2Panel7
             // 
             this.guna2Panel7.Controls.Add(this.guna2CirclePictureBox3);
             this.guna2Panel7.Controls.Add(this.guna2HtmlLabel27);
-            this.guna2Panel7.Controls.Add(this.guna2HtmlLabel26);
+            this.guna2Panel7.Controls.Add(this.lblCtBill);
             this.guna2Transition1.SetDecoration(this.guna2Panel7, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel7.Location = new System.Drawing.Point(627, 259);
             this.guna2Panel7.Name = "guna2Panel7";
@@ -221,30 +222,30 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel27.TabIndex = 16;
             this.guna2HtmlLabel27.Text = "Tổng Số Hóa Đơn Đã Xuất";
             // 
-            // guna2HtmlLabel26
+            // lblCtBill
             // 
-            this.guna2HtmlLabel26.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel26, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel26.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel26.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel26.Location = new System.Drawing.Point(92, 18);
-            this.guna2HtmlLabel26.Name = "guna2HtmlLabel26";
-            this.guna2HtmlLabel26.Size = new System.Drawing.Size(48, 35);
-            this.guna2HtmlLabel26.TabIndex = 12;
-            this.guna2HtmlLabel26.Text = "200";
+            this.lblCtBill.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblCtBill, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblCtBill.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCtBill.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblCtBill.Location = new System.Drawing.Point(92, 18);
+            this.lblCtBill.Name = "lblCtBill";
+            this.lblCtBill.Size = new System.Drawing.Size(48, 35);
+            this.lblCtBill.TabIndex = 12;
+            this.lblCtBill.Text = "200";
             // 
             // guna2Panel6
             // 
-            this.guna2Panel6.Controls.Add(this.guna2HtmlLabel23);
+            this.guna2Panel6.Controls.Add(this.lblCapital);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel24);
             this.guna2Panel6.Controls.Add(this.guna2CircleButton6);
             this.guna2Panel6.Controls.Add(this.guna2CircleProgressBar5);
-            this.guna2Panel6.Controls.Add(this.guna2HtmlLabel22);
-            this.guna2Panel6.Controls.Add(this.guna2HtmlLabel20);
+            this.guna2Panel6.Controls.Add(this.lblTime3);
+            this.guna2Panel6.Controls.Add(this.lblLoss);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel19);
             this.guna2Panel6.Controls.Add(this.guna2CircleButton5);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel21);
-            this.guna2Panel6.Controls.Add(this.guna2HtmlLabel18);
+            this.guna2Panel6.Controls.Add(this.lblIncome);
             this.guna2Panel6.Controls.Add(this.guna2HtmlLabel17);
             this.guna2Panel6.Controls.Add(this.guna2CircleButton3);
             this.guna2Transition1.SetDecoration(this.guna2Panel6, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -255,17 +256,17 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel6.TabIndex = 4;
             this.guna2Panel6.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel6_Paint);
             // 
-            // guna2HtmlLabel23
+            // lblCapital
             // 
-            this.guna2HtmlLabel23.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel23, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel23.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel23.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel23.Location = new System.Drawing.Point(426, 109);
-            this.guna2HtmlLabel23.Name = "guna2HtmlLabel23";
-            this.guna2HtmlLabel23.Size = new System.Drawing.Size(98, 17);
-            this.guna2HtmlLabel23.TabIndex = 14;
-            this.guna2HtmlLabel23.Text = "3,540,000,000d";
+            this.lblCapital.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblCapital, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblCapital.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCapital.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblCapital.Location = new System.Drawing.Point(426, 109);
+            this.lblCapital.Name = "lblCapital";
+            this.lblCapital.Size = new System.Drawing.Size(98, 17);
+            this.lblCapital.TabIndex = 14;
+            this.lblCapital.Text = "3,540,000,000d";
             // 
             // guna2HtmlLabel24
             // 
@@ -376,29 +377,29 @@ namespace QShopManagement.DTO.UC
             this.guna2CircleProgressBar2.TabIndex = 11;
             this.guna2CircleProgressBar2.Value = 60;
             // 
-            // guna2HtmlLabel22
+            // lblTime3
             // 
-            this.guna2HtmlLabel22.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel22, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel22.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel22.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel22.Location = new System.Drawing.Point(451, 18);
-            this.guna2HtmlLabel22.Name = "guna2HtmlLabel22";
-            this.guna2HtmlLabel22.Size = new System.Drawing.Size(76, 21);
-            this.guna2HtmlLabel22.TabIndex = 9;
-            this.guna2HtmlLabel22.Text = "20/10/2021";
+            this.lblTime3.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblTime3, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblTime3.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblTime3.Location = new System.Drawing.Point(451, 18);
+            this.lblTime3.Name = "lblTime3";
+            this.lblTime3.Size = new System.Drawing.Size(76, 21);
+            this.lblTime3.TabIndex = 9;
+            this.lblTime3.Text = "20/10/2021";
             // 
-            // guna2HtmlLabel20
+            // lblLoss
             // 
-            this.guna2HtmlLabel20.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel20, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel20.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel20.Location = new System.Drawing.Point(294, 142);
-            this.guna2HtmlLabel20.Name = "guna2HtmlLabel20";
-            this.guna2HtmlLabel20.Size = new System.Drawing.Size(98, 17);
-            this.guna2HtmlLabel20.TabIndex = 13;
-            this.guna2HtmlLabel20.Text = "3,540,000,000d";
+            this.lblLoss.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblLoss, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblLoss.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblLoss.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblLoss.Location = new System.Drawing.Point(294, 142);
+            this.lblLoss.Name = "lblLoss";
+            this.lblLoss.Size = new System.Drawing.Size(98, 17);
+            this.lblLoss.TabIndex = 13;
+            this.lblLoss.Text = "3,540,000,000d";
             // 
             // guna2HtmlLabel19
             // 
@@ -445,17 +446,17 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel21.TabIndex = 9;
             this.guna2HtmlLabel21.Text = "Doanh thu";
             // 
-            // guna2HtmlLabel18
+            // lblIncome
             // 
-            this.guna2HtmlLabel18.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel18, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel18.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel18.Location = new System.Drawing.Point(295, 76);
-            this.guna2HtmlLabel18.Name = "guna2HtmlLabel18";
-            this.guna2HtmlLabel18.Size = new System.Drawing.Size(98, 17);
-            this.guna2HtmlLabel18.TabIndex = 9;
-            this.guna2HtmlLabel18.Text = "3,540,000,000d";
+            this.lblIncome.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblIncome, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblIncome.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblIncome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblIncome.Location = new System.Drawing.Point(295, 76);
+            this.lblIncome.Name = "lblIncome";
+            this.lblIncome.Size = new System.Drawing.Size(98, 17);
+            this.lblIncome.TabIndex = 9;
+            this.lblIncome.Text = "3,540,000,000d";
             // 
             // guna2HtmlLabel17
             // 
@@ -495,7 +496,7 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel5.BackColor = System.Drawing.Color.White;
             this.guna2Panel5.BorderRadius = 16;
             this.guna2Panel5.Controls.Add(this.guna2HtmlLabel15);
-            this.guna2Panel5.Controls.Add(this.guna2HtmlLabel16);
+            this.guna2Panel5.Controls.Add(this.lbltotalProvider);
             this.guna2Panel5.Controls.Add(this.guna2CirclePictureBox2);
             this.guna2Transition1.SetDecoration(this.guna2Panel5, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel5.Location = new System.Drawing.Point(627, 140);
@@ -516,17 +517,17 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel15.TabIndex = 15;
             this.guna2HtmlLabel15.Text = "Tổng Số Nhà Cung Cấp";
             // 
-            // guna2HtmlLabel16
+            // lbltotalProvider
             // 
-            this.guna2HtmlLabel16.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel16, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel16.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel16.Location = new System.Drawing.Point(86, 15);
-            this.guna2HtmlLabel16.Name = "guna2HtmlLabel16";
-            this.guna2HtmlLabel16.Size = new System.Drawing.Size(27, 35);
-            this.guna2HtmlLabel16.TabIndex = 14;
-            this.guna2HtmlLabel16.Text = "14";
+            this.lbltotalProvider.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lbltotalProvider, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lbltotalProvider.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalProvider.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lbltotalProvider.Location = new System.Drawing.Point(86, 15);
+            this.lbltotalProvider.Name = "lbltotalProvider";
+            this.lbltotalProvider.Size = new System.Drawing.Size(27, 35);
+            this.lbltotalProvider.TabIndex = 14;
+            this.lbltotalProvider.Text = "14";
             // 
             // guna2CirclePictureBox2
             // 
@@ -547,7 +548,7 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel4.BackColor = System.Drawing.Color.White;
             this.guna2Panel4.BorderRadius = 16;
             this.guna2Panel4.Controls.Add(this.guna2HtmlLabel10);
-            this.guna2Panel4.Controls.Add(this.guna2HtmlLabel9);
+            this.guna2Panel4.Controls.Add(this.lbltotalUser);
             this.guna2Panel4.Controls.Add(this.guna2CirclePictureBox1);
             this.guna2Transition1.SetDecoration(this.guna2Panel4, Guna.UI2.AnimatorNS.DecorationType.None);
             this.guna2Panel4.Location = new System.Drawing.Point(627, 30);
@@ -568,17 +569,17 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel10.TabIndex = 12;
             this.guna2HtmlLabel10.Text = "Tổng Số Tài Khoản";
             // 
-            // guna2HtmlLabel9
+            // lbltotalUser
             // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel9, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(86, 15);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(48, 35);
-            this.guna2HtmlLabel9.TabIndex = 11;
-            this.guna2HtmlLabel9.Text = "200";
+            this.lbltotalUser.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lbltotalUser, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lbltotalUser.Font = new System.Drawing.Font("Constantia", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbltotalUser.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lbltotalUser.Location = new System.Drawing.Point(86, 15);
+            this.lbltotalUser.Name = "lbltotalUser";
+            this.lbltotalUser.Size = new System.Drawing.Size(48, 35);
+            this.lbltotalUser.TabIndex = 11;
+            this.lbltotalUser.Text = "200";
             // 
             // guna2CirclePictureBox1
             // 
@@ -598,10 +599,10 @@ namespace QShopManagement.DTO.UC
             // 
             this.guna2Panel3.BackColor = System.Drawing.Color.White;
             this.guna2Panel3.BorderRadius = 16;
-            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel11);
+            this.guna2Panel3.Controls.Add(this.lblTotalStaff);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel12);
             this.guna2Panel3.Controls.Add(this.guna2CircleButton4);
-            this.guna2Panel3.Controls.Add(this.guna2HtmlLabel13);
+            this.guna2Panel3.Controls.Add(this.lblTime2);
             this.guna2Panel3.Controls.Add(this.guna2HtmlLabel14);
             this.guna2Panel3.Controls.Add(this.guna2CircleProgressBar3);
             this.guna2Transition1.SetDecoration(this.guna2Panel3, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -611,17 +612,17 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel3.Size = new System.Drawing.Size(277, 205);
             this.guna2Panel3.TabIndex = 1;
             // 
-            // guna2HtmlLabel11
+            // lblTotalStaff
             // 
-            this.guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel11, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel11.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel11.Location = new System.Drawing.Point(189, 136);
-            this.guna2HtmlLabel11.Name = "guna2HtmlLabel11";
-            this.guna2HtmlLabel11.Size = new System.Drawing.Size(22, 17);
-            this.guna2HtmlLabel11.TabIndex = 14;
-            this.guna2HtmlLabel11.Text = "354";
+            this.lblTotalStaff.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblTotalStaff, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblTotalStaff.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTotalStaff.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblTotalStaff.Location = new System.Drawing.Point(189, 136);
+            this.lblTotalStaff.Name = "lblTotalStaff";
+            this.lblTotalStaff.Size = new System.Drawing.Size(22, 17);
+            this.lblTotalStaff.TabIndex = 14;
+            this.lblTotalStaff.Text = "354";
             // 
             // guna2HtmlLabel12
             // 
@@ -658,17 +659,17 @@ namespace QShopManagement.DTO.UC
             this.guna2CircleButton4.Size = new System.Drawing.Size(10, 10);
             this.guna2CircleButton4.TabIndex = 12;
             // 
-            // guna2HtmlLabel13
+            // lblTime2
             // 
-            this.guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel13, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel13.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel13.Location = new System.Drawing.Point(165, 23);
-            this.guna2HtmlLabel13.Name = "guna2HtmlLabel13";
-            this.guna2HtmlLabel13.Size = new System.Drawing.Size(76, 21);
-            this.guna2HtmlLabel13.TabIndex = 11;
-            this.guna2HtmlLabel13.Text = "20/10/2021";
+            this.lblTime2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblTime2, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblTime2.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblTime2.Location = new System.Drawing.Point(165, 23);
+            this.lblTime2.Name = "lblTime2";
+            this.lblTime2.Size = new System.Drawing.Size(76, 21);
+            this.lblTime2.TabIndex = 11;
+            this.lblTime2.Text = "20/10/2021";
             // 
             // guna2HtmlLabel14
             // 
@@ -710,13 +711,13 @@ namespace QShopManagement.DTO.UC
             // 
             this.guna2Panel2.BackColor = System.Drawing.Color.White;
             this.guna2Panel2.BorderRadius = 12;
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel7);
+            this.guna2Panel2.Controls.Add(this.lblexport);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel8);
             this.guna2Panel2.Controls.Add(this.guna2CircleButton2);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2Panel2.Controls.Add(this.lblImport);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel5);
             this.guna2Panel2.Controls.Add(this.guna2CircleButton1);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
+            this.guna2Panel2.Controls.Add(this.lblTime1);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.guna2CircleProgressBar1);
             this.guna2Transition1.SetDecoration(this.guna2Panel2, Guna.UI2.AnimatorNS.DecorationType.None);
@@ -727,17 +728,17 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel2.Size = new System.Drawing.Size(277, 205);
             this.guna2Panel2.TabIndex = 0;
             // 
-            // guna2HtmlLabel7
+            // lblexport
             // 
-            this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel7, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel7.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(184, 156);
-            this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
-            this.guna2HtmlLabel7.Size = new System.Drawing.Size(22, 17);
-            this.guna2HtmlLabel7.TabIndex = 8;
-            this.guna2HtmlLabel7.Text = "354";
+            this.lblexport.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblexport, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblexport.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblexport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblexport.Location = new System.Drawing.Point(184, 156);
+            this.lblexport.Name = "lblexport";
+            this.lblexport.Size = new System.Drawing.Size(22, 17);
+            this.lblexport.TabIndex = 8;
+            this.lblexport.Text = "354";
             // 
             // guna2HtmlLabel8
             // 
@@ -772,17 +773,17 @@ namespace QShopManagement.DTO.UC
             this.guna2CircleButton2.Size = new System.Drawing.Size(10, 10);
             this.guna2CircleButton2.TabIndex = 6;
             // 
-            // guna2HtmlLabel6
+            // lblImport
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel6, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(184, 101);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(22, 17);
-            this.guna2HtmlLabel6.TabIndex = 5;
-            this.guna2HtmlLabel6.Text = "354";
+            this.lblImport.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblImport, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblImport.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblImport.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblImport.Location = new System.Drawing.Point(184, 101);
+            this.lblImport.Name = "lblImport";
+            this.lblImport.Size = new System.Drawing.Size(22, 17);
+            this.lblImport.TabIndex = 5;
+            this.lblImport.Text = "354";
             // 
             // guna2HtmlLabel5
             // 
@@ -817,17 +818,17 @@ namespace QShopManagement.DTO.UC
             this.guna2CircleButton1.Size = new System.Drawing.Size(10, 10);
             this.guna2CircleButton1.TabIndex = 3;
             // 
-            // guna2HtmlLabel4
+            // lblTime1
             // 
-            this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2Transition1.SetDecoration(this.guna2HtmlLabel4, Guna.UI2.AnimatorNS.DecorationType.None);
-            this.guna2HtmlLabel4.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(166, 24);
-            this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(76, 21);
-            this.guna2HtmlLabel4.TabIndex = 2;
-            this.guna2HtmlLabel4.Text = "20/10/2021";
+            this.lblTime1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2Transition1.SetDecoration(this.lblTime1, Guna.UI2.AnimatorNS.DecorationType.None);
+            this.lblTime1.Font = new System.Drawing.Font("Constantia", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTime1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(61)))), ((int)(((byte)(68)))), ((int)(((byte)(101)))));
+            this.lblTime1.Location = new System.Drawing.Point(166, 24);
+            this.lblTime1.Name = "lblTime1";
+            this.lblTime1.Size = new System.Drawing.Size(76, 21);
+            this.lblTime1.TabIndex = 2;
+            this.lblTime1.Text = "20/10/2021";
             // 
             // guna2HtmlLabel3
             // 
@@ -906,22 +907,22 @@ namespace QShopManagement.DTO.UC
             // guna2Transition1
             // 
             this.guna2Transition1.Cursor = null;
-            animation8.AnimateOnlyDifferences = true;
-            animation8.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.BlindCoeff")));
-            animation8.LeafCoeff = 0F;
-            animation8.MaxTime = 1F;
-            animation8.MinTime = 0F;
-            animation8.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicCoeff")));
-            animation8.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation8.MosaicShift")));
-            animation8.MosaicSize = 0;
-            animation8.Padding = new System.Windows.Forms.Padding(0);
-            animation8.RotateCoeff = 0F;
-            animation8.RotateLimit = 0F;
-            animation8.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.ScaleCoeff")));
-            animation8.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation8.SlideCoeff")));
-            animation8.TimeCoeff = 0F;
-            animation8.TransparencyCoeff = 0F;
-            this.guna2Transition1.DefaultAnimation = animation8;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.guna2Transition1.DefaultAnimation = animation2;
             // 
             // guna2ColorTransition1
             // 
@@ -988,44 +989,44 @@ namespace QShopManagement.DTO.UC
         private Guna.UI2.WinForms.Guna2Panel guna2Panel6;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTime1;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblImport;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblexport;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton2;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel11;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalStaff;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel12;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton4;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel13;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTime2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel14;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar3;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbltotalUser;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel15;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel16;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lbltotalProvider;
         private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox2;
         private Guna.UI2.WinForms.Guna2Transition guna2Transition1;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel21;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel18;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblIncome;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel17;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton3;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel19;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton5;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel20;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel22;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblLoss;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTime3;
         private Guna.UI2.WinForms.Guna2ColorTransition guna2ColorTransition1;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar4;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel27;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel26;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCtBill;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel10;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel29;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel30;
-        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel23;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblTotalCustomer;
+        private Guna.UI2.WinForms.Guna2HtmlLabel lblCapital;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel24;
         private Guna.UI2.WinForms.Guna2CircleButton guna2CircleButton6;
         private Guna.UI2.WinForms.Guna2CircleProgressBar guna2CircleProgressBar5;

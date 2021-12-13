@@ -21,7 +21,6 @@
           <ScalarProperty Name="Size" ColumnName="Size" />
           <ScalarProperty Name="Gia" ColumnName="Gia" />
           <ScalarProperty Name="Soluong" ColumnName="Soluong" />
-          <ScalarProperty Name="Ngaynhap" ColumnName="Ngaynhap" />
           <ScalarProperty Name="SoluongTon" ColumnName="SoluongTon" />
           <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
         </MappingFragment>
@@ -88,6 +87,7 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="HieuLuc" ColumnName="HieuLuc" />
           <ScalarProperty Name="MSNV" ColumnName="MSNV" />
+          <ScalarProperty Name="role" ColumnName="role" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -97,6 +97,7 @@
           <ScalarProperty Name="MaHD" ColumnName="MaHD" />
           <ScalarProperty Name="MaHH" ColumnName="MaHH" />
           <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="size" ColumnName="size" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -107,6 +108,7 @@
           <ScalarProperty Name="MaHH" ColumnName="MaHH" />
           <ScalarProperty Name="SLNhap" ColumnName="SLNhap" />
           <ScalarProperty Name="DonGiaNhap" ColumnName="DonGiaNhap" />
+          <ScalarProperty Name="size" ColumnName="size" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

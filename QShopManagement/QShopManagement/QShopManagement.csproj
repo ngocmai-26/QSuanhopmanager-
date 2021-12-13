@@ -59,6 +59,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLLER\BaseController.cs" />
+    <Compile Include="CONTROLLER\DashboardController.cs" />
     <Compile Include="CONTROLLER\LoginController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
@@ -134,8 +135,24 @@
     </Compile>
     <Compile Include="MODEL\DAO\AuthenticateDao.cs" />
     <Compile Include="MODEL\DAO\BaseDao.cs" />
+    <Compile Include="MODEL\DAO\CTImportBillDao.cs" />
+    <Compile Include="MODEL\DAO\CTBillDao.cs" />
+    <Compile Include="MODEL\DAO\BillDao.cs" />
+    <Compile Include="MODEL\DAO\CustomerDao.cs" />
+    <Compile Include="MODEL\DAO\DashDao.cs" />
     <Compile Include="MODEL\DAO\IBaseDao.cs" />
+    <Compile Include="MODEL\DAO\IBillDao.cs" />
+    <Compile Include="MODEL\DAO\ICTBILLDAO.cs" />
+    <Compile Include="MODEL\DAO\ICTIMPORTBILLDAO.cs" />
+    <Compile Include="MODEL\DAO\ICustomersDao.cs" />
+    <Compile Include="MODEL\DAO\IIMPORTCOUPONDAO.cs" />
+    <Compile Include="MODEL\DAO\ImportCouponDao.cs" />
+    <Compile Include="MODEL\DAO\IProductDao.cs" />
+    <Compile Include="MODEL\DAO\IProviderDao.cs" />
+    <Compile Include="MODEL\DAO\IStaffDao.cs" />
     <Compile Include="MODEL\DAO\IUserDao.cs" />
+    <Compile Include="MODEL\DAO\ProductDao.cs" />
+    <Compile Include="MODEL\DAO\StaffDao.cs" />
     <Compile Include="MODEL\DAO\UserDao.cs" />
     <Compile Include="MODEL\EF\Model1.Context.cs">
       <AutoGen>True</AutoGen>
@@ -182,6 +199,7 @@
     <Compile Include="MODEL\EF\tbl_TAIKHOAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="MODEL\DAO\ProviderDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DTO\UC\loadding.resx">
@@ -251,7 +269,18 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MODEL\EF\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MODEL\EF\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
   <ItemGroup>
     <None Include="Resources\258339045_392196179303007_6450734899595293411_n.jpg" />
   </ItemGroup>
@@ -326,18 +355,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\bill %282%29.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MODEL\EF\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-      <DependentUpon>Model1.edmx</DependentUpon>
-    </Content>
-    <Content Include="MODEL\EF\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />

@@ -31,20 +31,25 @@ namespace QShopManagement.DTO.UI
         UCProductManager productM;
         UCProviderManager providerM;
         UCStaffManager staffM;
-        UCBill billM;
-        UCImportBill importBillM;
+        UCBill bill;
+        UCImportBill importBill;
         bool isVoken = false;
         UCDashboard dash;
-        public frmControl()
+        UCBillManager billM;
+        UCImportBillManager importBillM;
+        string role_;
+        public frmControl(string role)
         {
+
             InitializeComponent();
+            role_ = role;
             dash = new UCDashboard();
             userM = new UCUserManager();
             staffM = new UCStaffManager();
             productM = new UCProductManager();
             providerM = new UCProviderManager();
-            billM = new UCBill();
-            importBillM = new UCImportBill();
+            billM = new UCBillManager();
+            importBillM = new UCImportBillManager();
             plnContent.Controls.Clear();
             plnContent.Controls.Add(dash);
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 16, 16));*/
@@ -55,13 +60,56 @@ namespace QShopManagement.DTO.UI
             pnlNavActive.Height = btnDashboard.Height + 10;
             pnlNavActive.Location = new Point(0,btnDashboard.Location.Y);
             dtpTime.Value = DateTime.Now;
+            dtpTime.Value = DateTime.Now;
+
+            btnAccountManager.Enabled = false;
+            btnBills.Enabled = false;
+            btnImportBills.Enabled = false;
+            btnProductManager.Enabled = false;
+            btnProviderManager.Enabled = false;
+            btnStaffManager.Enabled = false;
+            if (role_.Equals("Ketoan")) {
+                btnBills.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Kế Toán!");
+
+            }
+            else if (role_.Equals("Quankho"))
+            {
+                btnProductManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quản Kho !");
+
+
+            }
+            else if (role_.Equals("Quanly"))
+            {
+                btnProductManager.Enabled = true;
+                btnProviderManager.Enabled = true;
+                btnStaffManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Quản Lý !");
+
+
+            }
+            else if (role_.Equals("Admin"))
+            {
+                btnAccountManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Admin !");
+
+            }
+            else
+            {
+                // role nhanvien
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Nhân Viên !");
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(LoadDashboard);
             pnlNavActive.Height = btnDashboard.Height + 10;
-            pnlNavActive.Location = new Point(0, btnDashboard.Location.Y);
+            pnlNavActive.Top = btnDashboard.Top;
+            pnlNavActive.Left = 0;
+            MessageBox.Show(btnDashboard.Location.Y.ToString());
+
             AddLoadding();
             th.Start();
         }
@@ -319,6 +367,12 @@ namespace QShopManagement.DTO.UI
 
         }
 
-        
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn Muốn Đăng Xuất ? ","Thông Báo",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
     }
 }

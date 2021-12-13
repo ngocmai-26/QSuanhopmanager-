@@ -48,3 +48,5 @@ D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.Sq
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.xml
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.xml
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCBillManager.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCBillManager.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCImportBillManager.resources
