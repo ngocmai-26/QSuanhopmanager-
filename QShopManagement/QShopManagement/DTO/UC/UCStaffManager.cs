@@ -220,5 +220,15 @@ namespace QShopManagement.DTO.UC
             txtStaffName.Clear();
             txtBirthday.Clear();
         }
+
+        private void dgvStaffs_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void txtMaNV_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

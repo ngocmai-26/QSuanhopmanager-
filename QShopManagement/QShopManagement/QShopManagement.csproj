@@ -59,8 +59,11 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLLER\BaseController.cs" />
+    <Compile Include="CONTROLLER\CustomerManagerController.cs" />
     <Compile Include="CONTROLLER\DashboardController.cs" />
     <Compile Include="CONTROLLER\LoginController.cs" />
+    <Compile Include="CONTROLLER\ProductManagerController.cs" />
+    <Compile Include="CONTROLLER\ProviderManagerController.cs" />
     <Compile Include="CONTROLLER\StaffManagerController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
@@ -147,6 +150,7 @@
     <Compile Include="MODEL\DAO\CTBillDao.cs" />
     <Compile Include="MODEL\DAO\BillDao.cs" />
     <Compile Include="MODEL\DAO\CustomerDao.cs" />
+    <Compile Include="MODEL\DAO\CustomerManagerDao.cs" />
     <Compile Include="MODEL\DAO\DashDao.cs" />
     <Compile Include="MODEL\DAO\IBaseDao.cs" />
     <Compile Include="MODEL\DAO\IBillDao.cs" />
@@ -160,6 +164,8 @@
     <Compile Include="MODEL\DAO\IStaffDao.cs" />
     <Compile Include="MODEL\DAO\IUserDao.cs" />
     <Compile Include="MODEL\DAO\ProductDao.cs" />
+    <Compile Include="MODEL\DAO\ProductManagerDao.cs" />
+    <Compile Include="MODEL\DAO\ProviderManagerDao.cs" />
     <Compile Include="MODEL\DAO\StaffDao.cs" />
     <Compile Include="MODEL\DAO\StaffManagerDao.cs" />
     <Compile Include="MODEL\DAO\UserDao.cs" />

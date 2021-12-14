@@ -15,32 +15,85 @@ namespace QShopManagement.MODEL.DAO
             return await DB_.tbl_HANGHOA.CountAsync();
         }
 
-        public Task<bool> Add(tbl_HANGHOA ef)
+        public async Task<bool> Add(tbl_HANGHOA ef)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DB_.tbl_HANGHOA.Add(ef);
+                await DB_.SaveChangesAsync();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public async Task<int> GetCount()
         {
             return await DB_.tbl_HANGHOA.CountAsync();
         }
-        public Task<List<tbl_HANGHOA>> GetAll()
+        public async Task<List<tbl_HANGHOA>> GetAll()
         {
-            throw new NotImplementedException();
+            return await DB_.tbl_HANGHOA.ToListAsync();
         }
 
-        public Task<tbl_HANGHOA> GetSingleByID(string ID)
+        public async Task<tbl_HANGHOA> GetSingleByID(string ID)
         {
-            throw new NotImplementedException();
+            return await DB_.tbl_HANGHOA.FindAsync(ID);
         }
 
-        public Task<bool> Remove(string ID)
+        public async Task<bool> Remove(string ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //xoa rang buoc
+                var providerOfStaff = await DB_.tbl_NHACUNGCAP.Where(ct => ct.MaNCC.Equals(ID)).ToListAsync();
+                var ctImportBillStaff = new List<tbl_CTPHIEUNHAP>();
+                var ctBillStaff = new List<tbl_CTHOADON>();
+                if (ctBillStaff.Count > 0)
+                {
+                    DB_.tbl_CTHOADON.RemoveRange(ctBillStaff);
+                    await DB_.SaveChangesAsync();
+                }
+                if (ctImportBillStaff.Count > 0)
+                {
+                    DB_.tbl_CTPHIEUNHAP.RemoveRange(ctImportBillStaff);
+                    await DB_.SaveChangesAsync();
+                }
+                DB_.tbl_NHACUNGCAP.RemoveRange(providerOfStaff);
+                await DB_.SaveChangesAsync();
+                var ef = await GetSingleByID(ID);
+                if (ef != null)
+                {
+                    DB_.tbl_HANGHOA.Remove(ef);
+                    await DB_.SaveChangesAsync();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<bool> Update(tbl_HANGHOA ef)
+        public async Task<bool> Update(tbl_HANGHOA ef)
         {
-            throw new NotImplementedException();
+            var ef_ = await GetSingleByID(ef.MaHH);
+            if (ef_ != null)
+            {
+                ef_.MaHH = ef.MaHH;
+                ef_.TenHH = ef.TenHH;
+                ef_.Gia = ef.Gia;
+                ef_.Loaivai = ef.Loaivai;
+                ef_.Size = ef.Size;
+                ef_.MaNCC = ef.MaNCC;
+                ef_.Soluong = ef.Soluong;
+                ef_.SoluongTon = ef.SoluongTon;
+                await DB_.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }
