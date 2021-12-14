@@ -12,6 +12,29 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CTHOADON">
+      <EntityTypeMapping TypeName="QLCHModel.tbl_CTHOADON">
+        <MappingFragment StoreEntitySet="tbl_CTHOADON">
+          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+          <ScalarProperty Name="MaHH" ColumnName="MaHH" />
+          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tbl_CTPHIEUNHAP">
+      <EntityTypeMapping TypeName="QLCHModel.tbl_CTPHIEUNHAP">
+        <MappingFragment StoreEntitySet="tbl_CTPHIEUNHAP">
+          <ScalarProperty Name="MaSoPhieu" ColumnName="MaSoPhieu" />
+          <ScalarProperty Name="MaHH" ColumnName="MaHH" />
+          <ScalarProperty Name="SLNhap" ColumnName="SLNhap" />
+          <ScalarProperty Name="DonGiaNhap" ColumnName="DonGiaNhap" />
+          <ScalarProperty Name="size" ColumnName="size" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="tbl_HANGHOA">
       <EntityTypeMapping TypeName="QLCHModel.tbl_HANGHOA">
         <MappingFragment StoreEntitySet="tbl_HANGHOA">
@@ -21,7 +44,6 @@
           <ScalarProperty Name="Size" ColumnName="Size" />
           <ScalarProperty Name="Gia" ColumnName="Gia" />
           <ScalarProperty Name="Soluong" ColumnName="Soluong" />
-          <ScalarProperty Name="Ngaynhap" ColumnName="Ngaynhap" />
           <ScalarProperty Name="SoluongTon" ColumnName="SoluongTon" />
           <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
         </MappingFragment>
@@ -88,25 +110,7 @@
           <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="HieuLuc" ColumnName="HieuLuc" />
           <ScalarProperty Name="MSNV" ColumnName="MSNV" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tbl_CTHOADON">
-      <EntityTypeMapping TypeName="QLCHModel.tbl_CTHOADON">
-        <MappingFragment StoreEntitySet="tbl_CTHOADON">
-          <ScalarProperty Name="MaHD" ColumnName="MaHD" />
-          <ScalarProperty Name="MaHH" ColumnName="MaHH" />
-          <ScalarProperty Name="Soluong" ColumnName="Soluong" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
-    <EntitySetMapping Name="tbl_CTPHIEUNHAP">
-      <EntityTypeMapping TypeName="QLCHModel.tbl_CTPHIEUNHAP">
-        <MappingFragment StoreEntitySet="tbl_CTPHIEUNHAP">
-          <ScalarProperty Name="MaSoPhieu" ColumnName="MaSoPhieu" />
-          <ScalarProperty Name="MaHH" ColumnName="MaHH" />
-          <ScalarProperty Name="SLNhap" ColumnName="SLNhap" />
-          <ScalarProperty Name="DonGiaNhap" ColumnName="DonGiaNhap" />
+          <ScalarProperty Name="role" ColumnName="role" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

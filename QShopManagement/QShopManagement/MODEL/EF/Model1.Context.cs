@@ -26,6 +26,8 @@ namespace QShopManagement.MODEL.EF
         }
     
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<tbl_CTHOADON> tbl_CTHOADON { get; set; }
+        public virtual DbSet<tbl_CTPHIEUNHAP> tbl_CTPHIEUNHAP { get; set; }
         public virtual DbSet<tbl_HANGHOA> tbl_HANGHOA { get; set; }
         public virtual DbSet<tbl_HOADON> tbl_HOADON { get; set; }
         public virtual DbSet<tbl_KHACHHANG> tbl_KHACHHANG { get; set; }
@@ -33,7 +35,5 @@ namespace QShopManagement.MODEL.EF
         public virtual DbSet<tbl_NHANVIEN> tbl_NHANVIEN { get; set; }
         public virtual DbSet<tbl_PHIEUNHAPKHO> tbl_PHIEUNHAPKHO { get; set; }
         public virtual DbSet<tbl_TAIKHOAN> tbl_TAIKHOAN { get; set; }
-        public virtual DbSet<tbl_CTHOADON> tbl_CTHOADON { get; set; }
-        public virtual DbSet<tbl_CTPHIEUNHAP> tbl_CTPHIEUNHAP { get; set; }
     }
 }

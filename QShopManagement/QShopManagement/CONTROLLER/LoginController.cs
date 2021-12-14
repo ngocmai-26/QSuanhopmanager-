@@ -14,14 +14,14 @@ namespace QShopManagement.CONTROLLER
     {
 
         private AuthenticateDao model;
-        frmControl control;
         bool isValid = false;
         string username_, password_;
         Thread LoginTh;
-        public LoginController()
+        frmLogin login_;
+        public LoginController(frmLogin login)
         {
+            login_ = login;
             model = new AuthenticateDao();
-            control = new frmControl();
             LoginTh = new Thread(Login);
         }
 
@@ -38,12 +38,12 @@ namespace QShopManagement.CONTROLLER
 
                 if (string.IsNullOrEmpty(username_))
                 {
-                    MessageBox.Show("Tai Khoan Khong Duoc De Trong");
+                    MessageBox.Show("Tài Khoản Không Được Để Trống!");
                 }
                 else
                 {
 
-                    MessageBox.Show("Mat Khau Khong Duoc De Trong");
+                    MessageBox.Show("Mật Khẩu Không Được Để Trống!");
 
                 }
 
@@ -68,9 +68,15 @@ namespace QShopManagement.CONTROLLER
             {
                 Thread.Sleep(380);
                 bool isResult = await model.Login(username_,password_);
-
+                var ef = await model.GetRoleByUserName(username_);
                 if (isResult)
                 {
+                    frmControl control = new frmControl(ef);
+                    if (control.InvokeRequired)
+                    {
+                        control.Invoke(new Action(Login));
+                    }
+                    control.FormClosed += new FormClosedEventHandler(control_closed);
                     control.ShowDialog();
                     control.Activate();
                 }
@@ -83,6 +89,9 @@ namespace QShopManagement.CONTROLLER
 
         }
 
-
+        private void control_closed(object sender, FormClosedEventArgs e)
+        {
+            login_.Show_();
+        }
     }
 }

@@ -15,43 +15,37 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'QLCH.dbo.tbl_CTHOADON' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tbl_CTHOADON">
           <Key>
-            <PropertyRef Name="MaHD" />
-            <PropertyRef Name="MaHH" />
-            <PropertyRef Name="Soluong" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="MaHD" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="MaHH" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="Soluong" Type="int" Nullable="false" />
+          <Property Name="size" Type="nvarchar" MaxLength="15" Nullable="false" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
-        <!--Errors Found During Generation:
-warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
         <EntityType Name="tbl_CTPHIEUNHAP">
           <Key>
-            <PropertyRef Name="MaSoPhieu" />
-            <PropertyRef Name="MaHH" />
-            <PropertyRef Name="SLNhap" />
-            <PropertyRef Name="DonGiaNhap" />
+            <PropertyRef Name="ID" />
           </Key>
           <Property Name="MaSoPhieu" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="MaHH" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="SLNhap" Type="int" Nullable="false" />
           <Property Name="DonGiaNhap" Type="int" Nullable="false" />
+          <Property Name="size" Type="nvarchar" MaxLength="15" />
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="tbl_HANGHOA">
           <Key>
             <PropertyRef Name="MaHH" />
           </Key>
           <Property Name="MaHH" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="TenHH" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenHH" Type="nvarchar" MaxLength="50" />
           <Property Name="Loaivai" Type="nvarchar" MaxLength="50" Nullable="false" />
-          <Property Name="Size" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="Size" Type="nvarchar" MaxLength="15" />
           <Property Name="Gia" Type="int" Nullable="false" />
           <Property Name="Soluong" Type="int" Nullable="false" />
-          <Property Name="Ngaynhap" Type="date" Nullable="false" />
           <Property Name="SoluongTon" Type="int" Nullable="false" />
           <Property Name="MaNCC" Type="nvarchar" MaxLength="10" Nullable="false" />
         </EntityType>
@@ -69,7 +63,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             <PropertyRef Name="MaKH" />
           </Key>
           <Property Name="MaKH" Type="nvarchar" MaxLength="10" Nullable="false" />
-          <Property Name="TenKH" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="TenKH" Type="nvarchar" MaxLength="100" />
           <Property Name="SDT" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="DC" Type="nvarchar" MaxLength="100" Nullable="false" />
         </EntityType>
@@ -81,7 +75,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <Property Name="TenNCC" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="DiaChi" Type="nvarchar" MaxLength="100" Nullable="false" />
           <Property Name="SDT" Type="varchar" MaxLength="15" Nullable="false" />
-          <Property Name="LoaiHang" Type="nchar" MaxLength="15" Nullable="false" />
+          <Property Name="LoaiHang" Type="nvarchar" MaxLength="100" />
         </EntityType>
         <EntityType Name="tbl_NHANVIEN">
           <Key>
@@ -112,6 +106,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
           <Property Name="HieuLuc" Type="nvarchar" MaxLength="10" Nullable="false" />
           <Property Name="MSNV" Type="nvarchar" MaxLength="10" Nullable="false" />
+          <Property Name="role" Type="nvarchar" MaxLength="15" Nullable="false" />
         </EntityType>
         <Association Name="FK_tbl_CTHOADON_tbl_HANGHOA">
           <End Role="tbl_HANGHOA" Type="Self.tbl_HANGHOA" Multiplicity="1" />
@@ -211,6 +206,8 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
         </Association>
         <EntityContainer Name="QLCHModelStoreContainer">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_HANGHOA" EntityType="Self.tbl_HANGHOA" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_HOADON" EntityType="Self.tbl_HOADON" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_KHACHHANG" EntityType="Self.tbl_KHACHHANG" Schema="dbo" store:Type="Tables" />
@@ -218,21 +215,6 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <EntitySet Name="tbl_NHANVIEN" EntityType="Self.tbl_NHANVIEN" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_PHIEUNHAPKHO" EntityType="Self.tbl_PHIEUNHAPKHO" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="tbl_TAIKHOAN" EntityType="Self.tbl_TAIKHOAN" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [tbl_CTHOADON].[MaHD] AS [MaHD], 
-    [tbl_CTHOADON].[MaHH] AS [MaHH], 
-    [tbl_CTHOADON].[Soluong] AS [Soluong]
-    FROM [dbo].[tbl_CTHOADON] AS [tbl_CTHOADON]</DefiningQuery>
-          </EntitySet>
-          <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" store:Type="Tables" store:Schema="dbo">
-            <DefiningQuery>SELECT 
-    [tbl_CTPHIEUNHAP].[MaSoPhieu] AS [MaSoPhieu], 
-    [tbl_CTPHIEUNHAP].[MaHH] AS [MaHH], 
-    [tbl_CTPHIEUNHAP].[SLNhap] AS [SLNhap], 
-    [tbl_CTPHIEUNHAP].[DonGiaNhap] AS [DonGiaNhap]
-    FROM [dbo].[tbl_CTPHIEUNHAP] AS [tbl_CTPHIEUNHAP]</DefiningQuery>
-          </EntitySet>
           <AssociationSet Name="FK_tbl_CTHOADON_tbl_HANGHOA" Association="Self.FK_tbl_CTHOADON_tbl_HANGHOA">
             <End Role="tbl_HANGHOA" EntitySet="tbl_HANGHOA" />
             <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
@@ -281,17 +263,41 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
+        <EntityType Name="tbl_CTHOADON">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Soluong" Type="Int32" Nullable="false" />
+          <Property Name="size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTHOADON_tbl_HANGHOA" FromRole="tbl_CTHOADON" ToRole="tbl_HANGHOA" />
+          <NavigationProperty Name="tbl_HOADON" Relationship="Self.FK_tbl_CTHOADON_tbl_HOADON" FromRole="tbl_CTHOADON" ToRole="tbl_HOADON" />
+        </EntityType>
+        <EntityType Name="tbl_CTPHIEUNHAP">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="MaSoPhieu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="SLNhap" Type="Int32" Nullable="false" />
+          <Property Name="DonGiaNhap" Type="Int32" Nullable="false" />
+          <Property Name="size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_HANGHOA" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_HANGHOA" />
+          <NavigationProperty Name="tbl_PHIEUNHAPKHO" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_PHIEUNHAPKHO" />
+        </EntityType>
         <EntityType Name="tbl_HANGHOA">
           <Key>
             <PropertyRef Name="MaHH" />
           </Key>
           <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="TenHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenHH" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Loaivai" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Size" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="Size" Type="String" MaxLength="15" FixedLength="false" Unicode="true" />
           <Property Name="Gia" Type="Int32" Nullable="false" />
           <Property Name="Soluong" Type="Int32" Nullable="false" />
-          <Property Name="Ngaynhap" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="SoluongTon" Type="Int32" Nullable="false" />
           <Property Name="MaNCC" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="tbl_CTHOADON" Relationship="Self.FK_tbl_CTHOADON_tbl_HANGHOA" FromRole="tbl_HANGHOA" ToRole="tbl_CTHOADON" />
@@ -315,7 +321,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             <PropertyRef Name="MaKH" />
           </Key>
           <Property Name="MaKH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="TenKH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="TenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <Property Name="SDT" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="tbl_HOADON" Relationship="Self.FK_tbl_HOADON_tbl_KHACHHANG" FromRole="tbl_KHACHHANG" ToRole="tbl_HOADON" />
@@ -328,7 +334,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <Property Name="TenNCC" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="DiaChi" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="SDT" Type="String" MaxLength="15" FixedLength="false" Unicode="false" Nullable="false" />
-          <Property Name="LoaiHang" Type="String" MaxLength="15" FixedLength="true" Unicode="true" Nullable="false" />
+          <Property Name="LoaiHang" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
           <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_HANGHOA_tbl_NHACUNGCAP" FromRole="tbl_NHACUNGCAP" ToRole="tbl_HANGHOA" />
         </EntityType>
         <EntityType Name="tbl_NHANVIEN">
@@ -363,33 +369,8 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="HieuLuc" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
           <Property Name="MSNV" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="role" Type="String" MaxLength="15" FixedLength="false" Unicode="true" Nullable="false" />
           <NavigationProperty Name="tbl_NHANVIEN" Relationship="Self.FK_tbl_TAIKHOAN_tbl_NHANVIEN" FromRole="tbl_TAIKHOAN" ToRole="tbl_NHANVIEN" />
-        </EntityType>
-        <EntityType Name="tbl_CTHOADON">
-          <Key>
-            <PropertyRef Name="MaHD" />
-            <PropertyRef Name="MaHH" />
-            <PropertyRef Name="Soluong" />
-          </Key>
-          <Property Name="MaHD" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="Soluong" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTHOADON_tbl_HANGHOA" FromRole="tbl_CTHOADON" ToRole="tbl_HANGHOA" />
-          <NavigationProperty Name="tbl_HOADON" Relationship="Self.FK_tbl_CTHOADON_tbl_HOADON" FromRole="tbl_CTHOADON" ToRole="tbl_HOADON" />
-        </EntityType>
-        <EntityType Name="tbl_CTPHIEUNHAP">
-          <Key>
-            <PropertyRef Name="MaSoPhieu" />
-            <PropertyRef Name="MaHH" />
-            <PropertyRef Name="SLNhap" />
-            <PropertyRef Name="DonGiaNhap" />
-          </Key>
-          <Property Name="MaSoPhieu" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="MaHH" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
-          <Property Name="SLNhap" Type="Int32" Nullable="false" />
-          <Property Name="DonGiaNhap" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="tbl_HANGHOA" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_HANGHOA" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_HANGHOA" />
-          <NavigationProperty Name="tbl_PHIEUNHAPKHO" Relationship="Self.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" FromRole="tbl_CTPHIEUNHAP" ToRole="tbl_PHIEUNHAPKHO" />
         </EntityType>
         <Association Name="FK_tbl_CTHOADON_tbl_HANGHOA">
           <End Role="tbl_HANGHOA" Type="Self.tbl_HANGHOA" Multiplicity="1" />
@@ -400,6 +381,18 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             </Principal>
             <Dependent Role="tbl_CTHOADON">
               <PropertyRef Name="MaHH" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK_tbl_CTHOADON_tbl_HOADON">
+          <End Role="tbl_HOADON" Type="Self.tbl_HOADON" Multiplicity="1" />
+          <End Role="tbl_CTHOADON" Type="Self.tbl_CTHOADON" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_HOADON">
+              <PropertyRef Name="MaHD" />
+            </Principal>
+            <Dependent Role="tbl_CTHOADON">
+              <PropertyRef Name="MaHD" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -415,6 +408,18 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO">
+          <End Role="tbl_PHIEUNHAPKHO" Type="Self.tbl_PHIEUNHAPKHO" Multiplicity="1" />
+          <End Role="tbl_CTPHIEUNHAP" Type="Self.tbl_CTPHIEUNHAP" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="tbl_PHIEUNHAPKHO">
+              <PropertyRef Name="MaSoPhieu" />
+            </Principal>
+            <Dependent Role="tbl_CTPHIEUNHAP">
+              <PropertyRef Name="MaSoPhieu" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="FK_tbl_HANGHOA_tbl_NHACUNGCAP">
           <End Role="tbl_NHACUNGCAP" Type="Self.tbl_NHACUNGCAP" Multiplicity="1" />
           <End Role="tbl_HANGHOA" Type="Self.tbl_HANGHOA" Multiplicity="*" />
@@ -424,18 +429,6 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             </Principal>
             <Dependent Role="tbl_HANGHOA">
               <PropertyRef Name="MaNCC" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
-        <Association Name="FK_tbl_CTHOADON_tbl_HOADON">
-          <End Role="tbl_HOADON" Type="Self.tbl_HOADON" Multiplicity="1" />
-          <End Role="tbl_CTHOADON" Type="Self.tbl_CTHOADON" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tbl_HOADON">
-              <PropertyRef Name="MaHD" />
-            </Principal>
-            <Dependent Role="tbl_CTHOADON">
-              <PropertyRef Name="MaHD" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -475,20 +468,10 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        <Association Name="FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO">
-          <End Role="tbl_PHIEUNHAPKHO" Type="Self.tbl_PHIEUNHAPKHO" Multiplicity="1" />
-          <End Role="tbl_CTPHIEUNHAP" Type="Self.tbl_CTPHIEUNHAP" Multiplicity="*" />
-          <ReferentialConstraint>
-            <Principal Role="tbl_PHIEUNHAPKHO">
-              <PropertyRef Name="MaSoPhieu" />
-            </Principal>
-            <Dependent Role="tbl_CTPHIEUNHAP">
-              <PropertyRef Name="MaSoPhieu" />
-            </Dependent>
-          </ReferentialConstraint>
-        </Association>
         <EntityContainer Name="QLCHEntities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" />
+          <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" />
           <EntitySet Name="tbl_HANGHOA" EntityType="Self.tbl_HANGHOA" />
           <EntitySet Name="tbl_HOADON" EntityType="Self.tbl_HOADON" />
           <EntitySet Name="tbl_KHACHHANG" EntityType="Self.tbl_KHACHHANG" />
@@ -496,23 +479,25 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <EntitySet Name="tbl_NHANVIEN" EntityType="Self.tbl_NHANVIEN" />
           <EntitySet Name="tbl_PHIEUNHAPKHO" EntityType="Self.tbl_PHIEUNHAPKHO" />
           <EntitySet Name="tbl_TAIKHOAN" EntityType="Self.tbl_TAIKHOAN" />
-          <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" />
-          <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" />
           <AssociationSet Name="FK_tbl_CTHOADON_tbl_HANGHOA" Association="Self.FK_tbl_CTHOADON_tbl_HANGHOA">
             <End Role="tbl_HANGHOA" EntitySet="tbl_HANGHOA" />
+            <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
+          </AssociationSet>
+          <AssociationSet Name="FK_tbl_CTHOADON_tbl_HOADON" Association="Self.FK_tbl_CTHOADON_tbl_HOADON">
+            <End Role="tbl_HOADON" EntitySet="tbl_HOADON" />
             <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
           </AssociationSet>
           <AssociationSet Name="FK_tbl_CTPHIEUNHAP_tbl_HANGHOA" Association="Self.FK_tbl_CTPHIEUNHAP_tbl_HANGHOA">
             <End Role="tbl_HANGHOA" EntitySet="tbl_HANGHOA" />
             <End Role="tbl_CTPHIEUNHAP" EntitySet="tbl_CTPHIEUNHAP" />
           </AssociationSet>
+          <AssociationSet Name="FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" Association="Self.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO">
+            <End Role="tbl_PHIEUNHAPKHO" EntitySet="tbl_PHIEUNHAPKHO" />
+            <End Role="tbl_CTPHIEUNHAP" EntitySet="tbl_CTPHIEUNHAP" />
+          </AssociationSet>
           <AssociationSet Name="FK_tbl_HANGHOA_tbl_NHACUNGCAP" Association="Self.FK_tbl_HANGHOA_tbl_NHACUNGCAP">
             <End Role="tbl_NHACUNGCAP" EntitySet="tbl_NHACUNGCAP" />
             <End Role="tbl_HANGHOA" EntitySet="tbl_HANGHOA" />
-          </AssociationSet>
-          <AssociationSet Name="FK_tbl_CTHOADON_tbl_HOADON" Association="Self.FK_tbl_CTHOADON_tbl_HOADON">
-            <End Role="tbl_HOADON" EntitySet="tbl_HOADON" />
-            <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
           </AssociationSet>
           <AssociationSet Name="FK_tbl_HOADON_tbl_KHACHHANG" Association="Self.FK_tbl_HOADON_tbl_KHACHHANG">
             <End Role="tbl_KHACHHANG" EntitySet="tbl_KHACHHANG" />
@@ -525,10 +510,6 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
           <AssociationSet Name="FK_tbl_TAIKHOAN_tbl_NHANVIEN" Association="Self.FK_tbl_TAIKHOAN_tbl_NHANVIEN">
             <End Role="tbl_NHANVIEN" EntitySet="tbl_NHANVIEN" />
             <End Role="tbl_TAIKHOAN" EntitySet="tbl_TAIKHOAN" />
-          </AssociationSet>
-          <AssociationSet Name="FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO" Association="Self.FK_tbl_CTPHIEUNHAP_tbl_PHIEUNHAPKHO">
-            <End Role="tbl_PHIEUNHAPKHO" EntitySet="tbl_PHIEUNHAPKHO" />
-            <End Role="tbl_CTPHIEUNHAP" EntitySet="tbl_CTPHIEUNHAP" />
           </AssociationSet>
         </EntityContainer>
       </Schema>
@@ -548,6 +529,29 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="tbl_CTHOADON">
+            <EntityTypeMapping TypeName="QLCHModel.tbl_CTHOADON">
+              <MappingFragment StoreEntitySet="tbl_CTHOADON">
+                <ScalarProperty Name="MaHD" ColumnName="MaHD" />
+                <ScalarProperty Name="MaHH" ColumnName="MaHH" />
+                <ScalarProperty Name="Soluong" ColumnName="Soluong" />
+                <ScalarProperty Name="size" ColumnName="size" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="tbl_CTPHIEUNHAP">
+            <EntityTypeMapping TypeName="QLCHModel.tbl_CTPHIEUNHAP">
+              <MappingFragment StoreEntitySet="tbl_CTPHIEUNHAP">
+                <ScalarProperty Name="MaSoPhieu" ColumnName="MaSoPhieu" />
+                <ScalarProperty Name="MaHH" ColumnName="MaHH" />
+                <ScalarProperty Name="SLNhap" ColumnName="SLNhap" />
+                <ScalarProperty Name="DonGiaNhap" ColumnName="DonGiaNhap" />
+                <ScalarProperty Name="size" ColumnName="size" />
+                <ScalarProperty Name="ID" ColumnName="ID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="tbl_HANGHOA">
             <EntityTypeMapping TypeName="QLCHModel.tbl_HANGHOA">
               <MappingFragment StoreEntitySet="tbl_HANGHOA">
@@ -557,7 +561,6 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
                 <ScalarProperty Name="Size" ColumnName="Size" />
                 <ScalarProperty Name="Gia" ColumnName="Gia" />
                 <ScalarProperty Name="Soluong" ColumnName="Soluong" />
-                <ScalarProperty Name="Ngaynhap" ColumnName="Ngaynhap" />
                 <ScalarProperty Name="SoluongTon" ColumnName="SoluongTon" />
                 <ScalarProperty Name="MaNCC" ColumnName="MaNCC" />
               </MappingFragment>
@@ -624,25 +627,7 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
                 <ScalarProperty Name="Password" ColumnName="Password" />
                 <ScalarProperty Name="HieuLuc" ColumnName="HieuLuc" />
                 <ScalarProperty Name="MSNV" ColumnName="MSNV" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tbl_CTHOADON">
-            <EntityTypeMapping TypeName="QLCHModel.tbl_CTHOADON">
-              <MappingFragment StoreEntitySet="tbl_CTHOADON">
-                <ScalarProperty Name="MaHD" ColumnName="MaHD" />
-                <ScalarProperty Name="MaHH" ColumnName="MaHH" />
-                <ScalarProperty Name="Soluong" ColumnName="Soluong" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="tbl_CTPHIEUNHAP">
-            <EntityTypeMapping TypeName="QLCHModel.tbl_CTPHIEUNHAP">
-              <MappingFragment StoreEntitySet="tbl_CTPHIEUNHAP">
-                <ScalarProperty Name="MaSoPhieu" ColumnName="MaSoPhieu" />
-                <ScalarProperty Name="MaHH" ColumnName="MaHH" />
-                <ScalarProperty Name="SLNhap" ColumnName="SLNhap" />
-                <ScalarProperty Name="DonGiaNhap" ColumnName="DonGiaNhap" />
+                <ScalarProperty Name="role" ColumnName="role" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

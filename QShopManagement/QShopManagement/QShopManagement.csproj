@@ -59,7 +59,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CONTROLLER\BaseController.cs" />
+    <Compile Include="CONTROLLER\DashboardController.cs" />
     <Compile Include="CONTROLLER\LoginController.cs" />
+    <Compile Include="CONTROLLER\StaffManagerController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -72,6 +74,18 @@
     <Compile Include="DTO\UC\UCBill.Designer.cs">
       <DependentUpon>UCBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UC\UCBillManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCBillManager.Designer.cs">
+      <DependentUpon>UCBillManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCCustomersManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCCustomersManager.Designer.cs">
+      <DependentUpon>UCCustomersManager.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UC\UCDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -83,6 +97,12 @@
     </Compile>
     <Compile Include="DTO\UC\UCImportBill.Designer.cs">
       <DependentUpon>UCImportBill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBillManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DTO\UC\UCImportBillManager.Designer.cs">
+      <DependentUpon>UCImportBillManager.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UC\UCProductManager.cs">
       <SubType>UserControl</SubType>
@@ -120,11 +140,30 @@
     <Compile Include="DTO\UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Helper.cs" />
     <Compile Include="MODEL\DAO\AuthenticateDao.cs" />
     <Compile Include="MODEL\DAO\BaseDao.cs" />
+    <Compile Include="MODEL\DAO\CTImportBillDao.cs" />
+    <Compile Include="MODEL\DAO\CTBillDao.cs" />
+    <Compile Include="MODEL\DAO\BillDao.cs" />
+    <Compile Include="MODEL\DAO\CustomerDao.cs" />
+    <Compile Include="MODEL\DAO\DashDao.cs" />
     <Compile Include="MODEL\DAO\IBaseDao.cs" />
+    <Compile Include="MODEL\DAO\IBillDao.cs" />
+    <Compile Include="MODEL\DAO\ICTBILLDAO.cs" />
+    <Compile Include="MODEL\DAO\ICTIMPORTBILLDAO.cs" />
+    <Compile Include="MODEL\DAO\ICustomersDao.cs" />
+    <Compile Include="MODEL\DAO\IIMPORTCOUPONDAO.cs" />
+    <Compile Include="MODEL\DAO\ImportCouponDao.cs" />
+    <Compile Include="MODEL\DAO\IProductDao.cs" />
+    <Compile Include="MODEL\DAO\IProviderDao.cs" />
+    <Compile Include="MODEL\DAO\IStaffDao.cs" />
     <Compile Include="MODEL\DAO\IUserDao.cs" />
+    <Compile Include="MODEL\DAO\ProductDao.cs" />
+    <Compile Include="MODEL\DAO\StaffDao.cs" />
+    <Compile Include="MODEL\DAO\StaffManagerDao.cs" />
     <Compile Include="MODEL\DAO\UserDao.cs" />
+    <Compile Include="MODEL\DAO\ProviderDao.cs" />
     <Compile Include="MODEL\EF\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -178,11 +217,20 @@
     <EmbeddedResource Include="DTO\UC\UCBill.resx">
       <DependentUpon>UCBill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCBillManager.resx">
+      <DependentUpon>UCBillManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCCustomersManager.resx">
+      <DependentUpon>UCCustomersManager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCDashboard.resx">
       <DependentUpon>UCDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCImportBill.resx">
       <DependentUpon>UCImportBill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UC\UCImportBillManager.resx">
+      <DependentUpon>UCImportBillManager.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
       <DependentUpon>UCProductManager.cs</DependentUpon>
@@ -233,7 +281,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
   <ItemGroup>
     <None Include="Resources\258339045_392196179303007_6450734899595293411_n.jpg" />
   </ItemGroup>
@@ -310,19 +357,20 @@
     <None Include="Resources\bill %282%29.png" />
   </ItemGroup>
   <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
     <Content Include="MODEL\EF\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
       <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
     </Content>
     <Content Include="MODEL\EF\Model1.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-  </ItemGroup>
-  <ItemGroup>
-    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

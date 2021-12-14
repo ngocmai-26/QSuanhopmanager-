@@ -29,43 +29,46 @@ namespace QShopManagement.DTO.UC
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
-            this.btnSave = new Guna.UI2.WinForms.Guna2Button();
+            this.btnClearInput = new Guna.UI2.WinForms.Guna2Button();
             this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel4 = new Guna.UI2.WinForms.Guna2Panel();
             this.dgvStaffs = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.tblNHANVIENBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.cbbDeparment = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtDepartment = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.plnGender = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rbtnNu = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.rbtnNam = new Guna.UI2.WinForms.Guna2CustomRadioButton();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel5 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtNumberPhone = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtAddress = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel4 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.dtpBirthday = new Guna.UI2.WinForms.Guna2DateTimePicker();
             this.guna2HtmlLabel3 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtStaffName = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbtnNam = new Guna.UI2.WinForms.Guna2CustomRadioButton();
-            this.guna2HtmlLabel9 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel10 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.rbtnNu = new Guna.UI2.WinForms.Guna2CustomRadioButton();
+            this.txtBirthday = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel3.SuspendLayout();
             this.guna2Panel5.SuspendLayout();
             this.guna2Panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffs)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNHANVIENBindingSource)).BeginInit();
             this.guna2Panel2.SuspendLayout();
             this.plnGender.SuspendLayout();
             this.SuspendLayout();
@@ -106,7 +109,7 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2Panel5
             // 
-            this.guna2Panel5.Controls.Add(this.btnSave);
+            this.guna2Panel5.Controls.Add(this.btnClearInput);
             this.guna2Panel5.Controls.Add(this.btnRemove);
             this.guna2Panel5.Controls.Add(this.btnUpdate);
             this.guna2Panel5.Controls.Add(this.btnAdd);
@@ -117,30 +120,31 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel5.Size = new System.Drawing.Size(186, 329);
             this.guna2Panel5.TabIndex = 1;
             // 
-            // btnSave
+            // btnClearInput
             // 
-            this.btnSave.Animated = true;
-            this.btnSave.BackColor = System.Drawing.Color.Transparent;
-            this.btnSave.BorderRadius = 6;
-            this.btnSave.CheckedState.Parent = this.btnSave;
-            this.btnSave.CustomImages.Parent = this.btnSave;
-            this.btnSave.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.btnSave.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.btnSave.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btnSave.DisabledState.Parent = this.btnSave;
-            this.btnSave.FillColor = System.Drawing.Color.DarkGray;
-            this.btnSave.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
-            this.btnSave.ForeColor = System.Drawing.Color.White;
-            this.btnSave.HoverState.Parent = this.btnSave;
-            this.btnSave.IndicateFocus = true;
-            this.btnSave.Location = new System.Drawing.Point(39, 278);
-            this.btnSave.Name = "btnSave";
-            this.btnSave.ShadowDecoration.Parent = this.btnSave;
-            this.btnSave.Size = new System.Drawing.Size(109, 34);
-            this.btnSave.TabIndex = 17;
-            this.btnSave.Text = "Lưu";
-            this.btnSave.UseTransparentBackground = true;
+            this.btnClearInput.Animated = true;
+            this.btnClearInput.BackColor = System.Drawing.Color.Transparent;
+            this.btnClearInput.BorderRadius = 6;
+            this.btnClearInput.CheckedState.Parent = this.btnClearInput;
+            this.btnClearInput.CustomImages.Parent = this.btnClearInput;
+            this.btnClearInput.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearInput.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btnClearInput.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btnClearInput.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btnClearInput.DisabledState.Parent = this.btnClearInput;
+            this.btnClearInput.FillColor = System.Drawing.Color.DarkGray;
+            this.btnClearInput.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Bold);
+            this.btnClearInput.ForeColor = System.Drawing.Color.White;
+            this.btnClearInput.HoverState.Parent = this.btnClearInput;
+            this.btnClearInput.IndicateFocus = true;
+            this.btnClearInput.Location = new System.Drawing.Point(39, 278);
+            this.btnClearInput.Name = "btnClearInput";
+            this.btnClearInput.ShadowDecoration.Parent = this.btnClearInput;
+            this.btnClearInput.Size = new System.Drawing.Size(109, 34);
+            this.btnClearInput.TabIndex = 17;
+            this.btnClearInput.Text = "Clear Input";
+            this.btnClearInput.UseTransparentBackground = true;
+            this.btnClearInput.Click += new System.EventHandler(this.btnClearInput_Click);
             // 
             // btnRemove
             // 
@@ -166,6 +170,7 @@ namespace QShopManagement.DTO.UC
             this.btnRemove.TabIndex = 16;
             this.btnRemove.Text = "Xóa";
             this.btnRemove.UseTransparentBackground = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnUpdate
             // 
@@ -191,6 +196,7 @@ namespace QShopManagement.DTO.UC
             this.btnUpdate.TabIndex = 15;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseTransparentBackground = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnAdd
             // 
@@ -215,6 +221,7 @@ namespace QShopManagement.DTO.UC
             this.btnAdd.TabIndex = 4;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseTransparentBackground = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // guna2Panel4
             // 
@@ -228,34 +235,40 @@ namespace QShopManagement.DTO.UC
             // 
             // dgvStaffs
             // 
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            this.dgvStaffs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle10;
-            this.dgvStaffs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dgvStaffs.AllowUserToAddRows = false;
+            this.dgvStaffs.AllowUserToDeleteRows = false;
+            this.dgvStaffs.AllowUserToResizeColumns = false;
+            this.dgvStaffs.AllowUserToResizeRows = false;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvStaffs.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvStaffs.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.dgvStaffs.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCellsExceptHeaders;
             this.dgvStaffs.BackgroundColor = System.Drawing.Color.White;
             this.dgvStaffs.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvStaffs.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStaffs.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvStaffs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle11;
-            this.dgvStaffs.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvStaffs.DefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvStaffs.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.dgvStaffs.ColumnHeadersHeight = 25;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvStaffs.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvStaffs.EnableHeadersVisualStyles = false;
             this.dgvStaffs.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvStaffs.Location = new System.Drawing.Point(25, 17);
             this.dgvStaffs.Name = "dgvStaffs";
+            this.dgvStaffs.ReadOnly = true;
             this.dgvStaffs.RowHeadersVisible = false;
             this.dgvStaffs.RowHeadersWidth = 51;
             this.dgvStaffs.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
@@ -273,8 +286,8 @@ namespace QShopManagement.DTO.UC
             this.dgvStaffs.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
             this.dgvStaffs.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
             this.dgvStaffs.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.dgvStaffs.ThemeStyle.HeaderStyle.Height = 4;
-            this.dgvStaffs.ThemeStyle.ReadOnly = false;
+            this.dgvStaffs.ThemeStyle.HeaderStyle.Height = 25;
+            this.dgvStaffs.ThemeStyle.ReadOnly = true;
             this.dgvStaffs.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvStaffs.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvStaffs.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI", 10.5F);
@@ -282,11 +295,17 @@ namespace QShopManagement.DTO.UC
             this.dgvStaffs.ThemeStyle.RowsStyle.Height = 22;
             this.dgvStaffs.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvStaffs.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.dgvStaffs.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvStaffs_CellDoubleClick);
+            // 
+            // tblNHANVIENBindingSource
+            // 
+            this.tblNHANVIENBindingSource.DataMember = "tbl_NHANVIEN";
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.txtBirthday);
+            this.guna2Panel2.Controls.Add(this.txtDepartment);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel8);
-            this.guna2Panel2.Controls.Add(this.cbbDeparment);
             this.guna2Panel2.Controls.Add(this.plnGender);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel7);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
@@ -294,7 +313,6 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel2.Controls.Add(this.txtNumberPhone);
             this.guna2Panel2.Controls.Add(this.txtAddress);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel4);
-            this.guna2Panel2.Controls.Add(this.dtpBirthday);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel3);
             this.guna2Panel2.Controls.Add(this.txtStaffName);
             this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
@@ -307,25 +325,42 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel2.TabIndex = 0;
             this.guna2Panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel2_Paint);
             // 
-            // cbbDeparment
+            // txtDepartment
             // 
-            this.cbbDeparment.BackColor = System.Drawing.Color.Transparent;
-            this.cbbDeparment.BorderRadius = 6;
-            this.cbbDeparment.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbbDeparment.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbbDeparment.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbDeparment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.cbbDeparment.FocusedState.Parent = this.cbbDeparment;
-            this.cbbDeparment.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.cbbDeparment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
-            this.cbbDeparment.HoverState.Parent = this.cbbDeparment;
-            this.cbbDeparment.ItemHeight = 30;
-            this.cbbDeparment.ItemsAppearance.Parent = this.cbbDeparment;
-            this.cbbDeparment.Location = new System.Drawing.Point(842, 15);
-            this.cbbDeparment.Name = "cbbDeparment";
-            this.cbbDeparment.ShadowDecoration.Parent = this.cbbDeparment;
-            this.cbbDeparment.Size = new System.Drawing.Size(85, 36);
-            this.cbbDeparment.TabIndex = 17;
+            this.txtDepartment.BorderRadius = 6;
+            this.txtDepartment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtDepartment.DefaultText = "";
+            this.txtDepartment.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtDepartment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtDepartment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDepartment.DisabledState.Parent = this.txtDepartment;
+            this.txtDepartment.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtDepartment.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDepartment.FocusedState.Parent = this.txtDepartment;
+            this.txtDepartment.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtDepartment.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtDepartment.HoverState.Parent = this.txtDepartment;
+            this.txtDepartment.Location = new System.Drawing.Point(839, 17);
+            this.txtDepartment.Name = "txtDepartment";
+            this.txtDepartment.PasswordChar = '\0';
+            this.txtDepartment.PlaceholderText = "";
+            this.txtDepartment.SelectedText = "";
+            this.txtDepartment.ShadowDecoration.Parent = this.txtDepartment;
+            this.txtDepartment.Size = new System.Drawing.Size(88, 36);
+            this.txtDepartment.TabIndex = 19;
+            this.txtDepartment.TextOffset = new System.Drawing.Point(10, 0);
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.AutoSize = false;
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(756, 24);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(77, 22);
+            this.guna2HtmlLabel8.TabIndex = 18;
+            this.guna2HtmlLabel8.Text = "Chức Vụ  :  ";
             // 
             // plnGender
             // 
@@ -338,6 +373,64 @@ namespace QShopManagement.DTO.UC
             this.plnGender.ShadowDecoration.Parent = this.plnGender;
             this.plnGender.Size = new System.Drawing.Size(104, 36);
             this.plnGender.TabIndex = 15;
+            // 
+            // guna2HtmlLabel10
+            // 
+            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel10.Location = new System.Drawing.Point(76, 11);
+            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
+            this.guna2HtmlLabel10.Size = new System.Drawing.Size(17, 17);
+            this.guna2HtmlLabel10.TabIndex = 4;
+            this.guna2HtmlLabel10.Text = "Nữ";
+            // 
+            // rbtnNu
+            // 
+            this.rbtnNu.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtnNu.CheckedState.BorderThickness = 0;
+            this.rbtnNu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtnNu.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbtnNu.CheckedState.Parent = this.rbtnNu;
+            this.rbtnNu.Location = new System.Drawing.Point(57, 11);
+            this.rbtnNu.Name = "rbtnNu";
+            this.rbtnNu.ShadowDecoration.Parent = this.rbtnNu;
+            this.rbtnNu.Size = new System.Drawing.Size(14, 14);
+            this.rbtnNu.TabIndex = 3;
+            this.rbtnNu.Text = "Nu";
+            this.rbtnNu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbtnNu.UncheckedState.BorderThickness = 2;
+            this.rbtnNu.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbtnNu.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbtnNu.UncheckedState.Parent = this.rbtnNu;
+            // 
+            // guna2HtmlLabel9
+            // 
+            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel9.Location = new System.Drawing.Point(22, 11);
+            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
+            this.guna2HtmlLabel9.Size = new System.Drawing.Size(24, 16);
+            this.guna2HtmlLabel9.TabIndex = 2;
+            this.guna2HtmlLabel9.Text = "Nam";
+            // 
+            // rbtnNam
+            // 
+            this.rbtnNam.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtnNam.CheckedState.BorderThickness = 0;
+            this.rbtnNam.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.rbtnNam.CheckedState.InnerColor = System.Drawing.Color.White;
+            this.rbtnNam.CheckedState.Parent = this.rbtnNam;
+            this.rbtnNam.Location = new System.Drawing.Point(3, 11);
+            this.rbtnNam.Name = "rbtnNam";
+            this.rbtnNam.ShadowDecoration.Parent = this.rbtnNam;
+            this.rbtnNam.Size = new System.Drawing.Size(14, 14);
+            this.rbtnNam.TabIndex = 1;
+            this.rbtnNam.Text = "Nam ";
+            this.rbtnNam.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
+            this.rbtnNam.UncheckedState.BorderThickness = 2;
+            this.rbtnNam.UncheckedState.FillColor = System.Drawing.Color.Transparent;
+            this.rbtnNam.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
+            this.rbtnNam.UncheckedState.Parent = this.rbtnNam;
             // 
             // guna2HtmlLabel7
             // 
@@ -436,24 +529,6 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel4.TabIndex = 9;
             this.guna2HtmlLabel4.Text = "Ngày Sinh :  ";
             // 
-            // dtpBirthday
-            // 
-            this.dtpBirthday.BorderRadius = 6;
-            this.dtpBirthday.Checked = true;
-            this.dtpBirthday.CheckedState.Parent = this.dtpBirthday;
-            this.dtpBirthday.FillColor = System.Drawing.Color.Snow;
-            this.dtpBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.dtpBirthday.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.dtpBirthday.HoverState.Parent = this.dtpBirthday;
-            this.dtpBirthday.Location = new System.Drawing.Point(133, 89);
-            this.dtpBirthday.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.dtpBirthday.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.dtpBirthday.Name = "dtpBirthday";
-            this.dtpBirthday.ShadowDecoration.Parent = this.dtpBirthday;
-            this.dtpBirthday.Size = new System.Drawing.Size(222, 36);
-            this.dtpBirthday.TabIndex = 8;
-            this.dtpBirthday.Value = new System.DateTime(2021, 12, 8, 17, 51, 15, 145);
-            // 
             // guna2HtmlLabel3
             // 
             this.guna2HtmlLabel3.AutoSize = false;
@@ -528,75 +603,30 @@ namespace QShopManagement.DTO.UC
             this.txtMaNV.TabIndex = 4;
             this.txtMaNV.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // guna2HtmlLabel8
+            // txtBirthday
             // 
-            this.guna2HtmlLabel8.AutoSize = false;
-            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel8.Location = new System.Drawing.Point(769, 24);
-            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
-            this.guna2HtmlLabel8.Size = new System.Drawing.Size(64, 22);
-            this.guna2HtmlLabel8.TabIndex = 18;
-            this.guna2HtmlLabel8.Text = "Chức Vụ : ";
-            // 
-            // rbtnNam
-            // 
-            this.rbtnNam.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtnNam.CheckedState.BorderThickness = 0;
-            this.rbtnNam.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtnNam.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbtnNam.CheckedState.Parent = this.rbtnNam;
-            this.rbtnNam.Location = new System.Drawing.Point(3, 11);
-            this.rbtnNam.Name = "rbtnNam";
-            this.rbtnNam.ShadowDecoration.Parent = this.rbtnNam;
-            this.rbtnNam.Size = new System.Drawing.Size(14, 14);
-            this.rbtnNam.TabIndex = 1;
-            this.rbtnNam.Text = "Nam ";
-            this.rbtnNam.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbtnNam.UncheckedState.BorderThickness = 2;
-            this.rbtnNam.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbtnNam.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbtnNam.UncheckedState.Parent = this.rbtnNam;
-            // 
-            // guna2HtmlLabel9
-            // 
-            this.guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel9.Font = new System.Drawing.Font("Consolas", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel9.Location = new System.Drawing.Point(22, 11);
-            this.guna2HtmlLabel9.Name = "guna2HtmlLabel9";
-            this.guna2HtmlLabel9.Size = new System.Drawing.Size(24, 16);
-            this.guna2HtmlLabel9.TabIndex = 2;
-            this.guna2HtmlLabel9.Text = "Nam";
-            // 
-            // guna2HtmlLabel10
-            // 
-            this.guna2HtmlLabel10.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel10.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel10.Location = new System.Drawing.Point(76, 11);
-            this.guna2HtmlLabel10.Name = "guna2HtmlLabel10";
-            this.guna2HtmlLabel10.Size = new System.Drawing.Size(17, 17);
-            this.guna2HtmlLabel10.TabIndex = 4;
-            this.guna2HtmlLabel10.Text = "Nữ";
-            // 
-            // rbtnNu
-            // 
-            this.rbtnNu.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtnNu.CheckedState.BorderThickness = 0;
-            this.rbtnNu.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.rbtnNu.CheckedState.InnerColor = System.Drawing.Color.White;
-            this.rbtnNu.CheckedState.Parent = this.rbtnNu;
-            this.rbtnNu.Location = new System.Drawing.Point(57, 11);
-            this.rbtnNu.Name = "rbtnNu";
-            this.rbtnNu.ShadowDecoration.Parent = this.rbtnNu;
-            this.rbtnNu.Size = new System.Drawing.Size(14, 14);
-            this.rbtnNu.TabIndex = 3;
-            this.rbtnNu.Text = "Nu";
-            this.rbtnNu.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(125)))), ((int)(((byte)(137)))), ((int)(((byte)(149)))));
-            this.rbtnNu.UncheckedState.BorderThickness = 2;
-            this.rbtnNu.UncheckedState.FillColor = System.Drawing.Color.Transparent;
-            this.rbtnNu.UncheckedState.InnerColor = System.Drawing.Color.Transparent;
-            this.rbtnNu.UncheckedState.Parent = this.rbtnNu;
+            this.txtBirthday.BorderRadius = 6;
+            this.txtBirthday.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtBirthday.DefaultText = "";
+            this.txtBirthday.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtBirthday.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtBirthday.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBirthday.DisabledState.Parent = this.txtBirthday;
+            this.txtBirthday.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtBirthday.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBirthday.FocusedState.Parent = this.txtBirthday;
+            this.txtBirthday.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtBirthday.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtBirthday.HoverState.Parent = this.txtBirthday;
+            this.txtBirthday.Location = new System.Drawing.Point(114, 89);
+            this.txtBirthday.Name = "txtBirthday";
+            this.txtBirthday.PasswordChar = '\0';
+            this.txtBirthday.PlaceholderText = "";
+            this.txtBirthday.SelectedText = "";
+            this.txtBirthday.ShadowDecoration.Parent = this.txtBirthday;
+            this.txtBirthday.Size = new System.Drawing.Size(217, 36);
+            this.txtBirthday.TabIndex = 20;
+            this.txtBirthday.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // UCStaffManager
             // 
@@ -607,11 +637,13 @@ namespace QShopManagement.DTO.UC
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Name = "UCStaffManager";
             this.Size = new System.Drawing.Size(950, 597);
+            this.Load += new System.EventHandler(this.UCStaffManager_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel5.ResumeLayout(false);
             this.guna2Panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvStaffs)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tblNHANVIENBindingSource)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
             this.plnGender.ResumeLayout(false);
@@ -630,7 +662,6 @@ namespace QShopManagement.DTO.UC
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel4;
-        private Guna.UI2.WinForms.Guna2DateTimePicker dtpBirthday;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel3;
         private Guna.UI2.WinForms.Guna2TextBox txtStaffName;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel5;
@@ -639,17 +670,27 @@ namespace QShopManagement.DTO.UC
         private Guna.UI2.WinForms.Guna2TextBox txtNumberPhone;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2Panel plnGender;
-        private Guna.UI2.WinForms.Guna2ComboBox cbbDeparment;
         private Guna.UI2.WinForms.Guna2DataGridView dgvStaffs;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnRemove;
-        private Guna.UI2.WinForms.Guna2Button btnSave;
+        private Guna.UI2.WinForms.Guna2Button btnClearInput;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rbtnNam;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel9;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel10;
         private Guna.UI2.WinForms.Guna2CustomRadioButton rbtnNu;
+        private System.Windows.Forms.BindingSource tblNHANVIENBindingSource;
+        private Guna.UI2.WinForms.Guna2TextBox txtDepartment;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mSNVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenNVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn gTNVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namSinhDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn queQuanDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn chucVuDataGridViewTextBoxColumn;
+        private Guna.UI2.WinForms.Guna2TextBox txtBirthday;
     }
 }

@@ -21,13 +21,34 @@ namespace QShopManagement.DTO.UI
         public frmLogin()
         {
             InitializeComponent();
-            loginCtrl = new LoginController();
+            loginCtrl = new LoginController(this);
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
-        {/*
+        {
             loginCtrl.getInfo(txtUserName.Text, txtPassword.Text);
-            loginCtrl.ValidForLogin();*/
+            loginCtrl.ValidForLogin();
+        }
+
+        internal void Show_()
+        {
+            try
+            {
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action(Show_));
+                    return;
+                }
+                txtPassword.Clear();
+                txtUserName.Clear();
+                this.Show();
+                this.Activate();
+            }
+            catch
+            {
+                
+            }
+           
         }
     }
 }

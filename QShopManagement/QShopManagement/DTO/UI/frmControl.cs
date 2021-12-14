@@ -27,24 +27,16 @@ namespace QShopManagement.DTO.UI
              int nHeightEllipse
 
        );
-        UCUserManager userM;
-        UCProductManager productM;
-        UCProviderManager providerM;
-        UCStaffManager staffM;
-        UCBill billM;
-        UCImportBill importBillM;
+        string role_;
         bool isVoken = false;
-        UCDashboard dash;
-        public frmControl()
+        public frmControl(string role)
         {
+
             InitializeComponent();
+            UCDashboard dash;
+
+            role_ = role;
             dash = new UCDashboard();
-            userM = new UCUserManager();
-            staffM = new UCStaffManager();
-            productM = new UCProductManager();
-            providerM = new UCProviderManager();
-            billM = new UCBill();
-            importBillM = new UCImportBill();
             plnContent.Controls.Clear();
             plnContent.Controls.Add(dash);
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 16, 16));*/
@@ -55,13 +47,56 @@ namespace QShopManagement.DTO.UI
             pnlNavActive.Height = btnDashboard.Height + 10;
             pnlNavActive.Location = new Point(0,btnDashboard.Location.Y);
             dtpTime.Value = DateTime.Now;
+            dtpTime.Value = DateTime.Now;
+
+            btnAccountManager.Enabled = false;
+            btnBills.Enabled = false;
+            btnImportBills.Enabled = false;
+            btnProductManager.Enabled = false;
+            btnProviderManager.Enabled = false;
+            btnStaffManager.Enabled = false;
+            btnCustomerManager.Enabled = false;
+            if (role_.Equals("Ketoan")) {
+                btnBills.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Kế Toán!");
+
+            }
+            else if (role_.Equals("Quankho"))
+            {
+                btnProductManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quản Kho !");
+
+
+            }
+            else if (role_.Equals("Quanly"))
+            {
+                btnProductManager.Enabled = true;
+                btnProviderManager.Enabled = true;
+                btnStaffManager.Enabled = true;
+                btnCustomerManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Quản Lý !");
+
+
+            }
+            else if (role_.Equals("Admin"))
+            {
+                btnAccountManager.Enabled = true;
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Admin !");
+
+            }
+            else
+            {
+                // role nhanvien
+                MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quyền Nhân Viên !");
+            }
         }
 
         private void btnDashboard_Click(object sender, EventArgs e)
         {
             Thread th = new Thread(LoadDashboard);
             pnlNavActive.Height = btnDashboard.Height + 10;
-            pnlNavActive.Location = new Point(0, btnDashboard.Location.Y);
+            pnlNavActive.Top = btnDashboard.Top;
+            pnlNavActive.Left = 0;
             AddLoadding();
             th.Start();
         }
@@ -140,6 +175,16 @@ namespace QShopManagement.DTO.UI
             th.Start();
         }
 
+
+        private void CustomerManager_Click(object sender, EventArgs e)
+        {
+            pnlNavActive.Height = btnCustomerManager.Height + 10;
+            pnlNavActive.Location = new Point(0, btnCustomerManager.Location.Y);
+            Thread th = new Thread(LoadCustomerManagerControl);
+            th.IsBackground = true;
+            AddLoadding();
+            th.Start();
+        }
         void LoadIMportBillManagerControl() {
             //add control
             try
@@ -155,7 +200,9 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadIMportBillManagerControl));
                     return;
                 }
+                UCImportBillManager importBillM = new UCImportBillManager();
                 plnContent.Controls.Clear();
+
                 plnContent.Controls.Add(importBillM);
             }
             catch
@@ -179,6 +226,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadBillManageControl));
                     return;
                 }
+                UCBillManager billM = new UCBillManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(billM);
             }
@@ -203,6 +251,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadStaffManagerControl));
                     return;
                 }
+                UCStaffManager staffM = new UCStaffManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(staffM);
             }
@@ -227,6 +276,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadUserManagerControl));
                     return;
                 }
+                UCUserManager userM = new UCUserManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(userM);
             }
@@ -252,6 +302,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadProviderManagerControl));
                     return;
                 }
+                UCProviderManager providerM = new UCProviderManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(providerM);
             }
@@ -276,8 +327,34 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadDashboard));
                     return;
                 }
+                UCDashboard dash = new UCDashboard();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(dash);
+            }
+            catch
+            {
+                MessageBox.Show("Some err when loading");
+            }
+        }
+        void LoadCustomerManagerControl()
+        {
+            try
+            {
+
+                if (!isVoken)
+                {
+                    Thread.Sleep(3000);
+                }
+
+                if (plnContent.InvokeRequired)
+                {
+                    isVoken = true;
+                    plnContent.Invoke(new Action(LoadCustomerManagerControl));
+                    return;
+                }
+                UCCustomersManager customerM = new UCCustomersManager();
+                plnContent.Controls.Clear();
+                plnContent.Controls.Add(customerM);
             }
             catch
             {
@@ -300,6 +377,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadProductManagerControl));
                     return;
                 }
+                UCProductManager productM = new UCProductManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(productM);
             }
@@ -310,7 +388,6 @@ namespace QShopManagement.DTO.UI
         }
         void AddLoadding()
         {
-
             plnContent.Controls.Clear();
             loadding load = new loadding();
             load.BackColor = plnContent.BackColor;
@@ -319,6 +396,13 @@ namespace QShopManagement.DTO.UI
 
         }
 
-        
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            if(MessageBox.Show("Bạn Muốn Đăng Xuất ? ","Thông Báo",MessageBoxButtons.YesNo,MessageBoxIcon.Warning) == DialogResult.Yes)
+            {
+                this.Close();
+            }
+        }
+
     }
 }

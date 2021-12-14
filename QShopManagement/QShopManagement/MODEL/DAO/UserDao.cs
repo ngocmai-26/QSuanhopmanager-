@@ -9,9 +9,18 @@ namespace QShopManagement.MODEL.DAO
 {
     class UserDao : BaseDao, IUserDao
     {
-        public async Task<tbl_TAIKHOAN> GetSingleByUserNameAndPassword(string username,string password)
+        public async Task<string> GetUserRole(string userName)
         {
-            return await DB_.tbl_TAIKHOAN.Where(tk => tk.UserNam.Equals(username) && tk.Password.Equals(password)).FirstOrDefaultAsync();
+            var ef = await DB_.tbl_TAIKHOAN.Where(tk => tk.UserNam.Equals(userName)).FirstOrDefaultAsync();
+            if (ef != null)
+            {
+                return ef.role;
+            }
+            return null;
+        }
+        public async Task<int> GetCount()
+        {
+            return await DB_.tbl_TAIKHOAN.CountAsync();
         }
         public Task<bool> Add(tbl_TAIKHOAN ef)
         {
@@ -26,6 +35,11 @@ namespace QShopManagement.MODEL.DAO
         public Task<tbl_TAIKHOAN> GetSingleByID(string ID)
         {
             throw new NotImplementedException();
+        }
+
+        public async Task<tbl_TAIKHOAN> GetSingleByUserNameAndPassword(string username,string password)
+        {
+            return await DB_.tbl_TAIKHOAN.Where(tk => tk.UserNam.Equals(username) && tk.Password.Equals(password)).FirstOrDefaultAsync();
         }
 
         public Task<bool> Remove(string ID)

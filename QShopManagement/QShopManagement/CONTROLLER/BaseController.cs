@@ -6,12 +6,9 @@ using System.Threading.Tasks;
 
 namespace QShopManagement.CONTROLLER
 {
-    interface BaseController<T>
+    class BaseController
     {
 
-        Task<bool> Add(T ef);
-        Task<bool> Update(T ef);
-        Task<bool> Remove(string ID);
-
+     
     }
 }
