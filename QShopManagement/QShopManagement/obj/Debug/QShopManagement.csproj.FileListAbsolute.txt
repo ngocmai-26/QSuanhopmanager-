@@ -52,3 +52,4 @@ C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCImportBillManager.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCCustomersManager.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCImportBillManager.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCCustomersManager.resources

@@ -27,31 +27,16 @@ namespace QShopManagement.DTO.UI
              int nHeightEllipse
 
        );
-        UCUserManager userM;
-        UCProductManager productM;
-        UCProviderManager providerM;
-        UCStaffManager staffM;
-        UCBill bill;
-        UCImportBill importBill;
-        bool isVoken = false;
-        UCDashboard dash;
-        UCBillManager billM;
-        UCImportBillManager importBillM;
-        UCCustomersManager customerM;
         string role_;
+        bool isVoken = false;
         public frmControl(string role)
         {
 
             InitializeComponent();
+            UCDashboard dash;
+
             role_ = role;
             dash = new UCDashboard();
-            userM = new UCUserManager();
-            staffM = new UCStaffManager();
-            productM = new UCProductManager();
-            providerM = new UCProviderManager();
-            billM = new UCBillManager();
-            importBillM = new UCImportBillManager();
-            customerM = new UCCustomersManager();
             plnContent.Controls.Clear();
             plnContent.Controls.Add(dash);
             /*Region = System.Drawing.Region.FromHrgn(CreateRoundRectRgn(0, 0, Width, Height, 16, 16));*/
@@ -112,8 +97,6 @@ namespace QShopManagement.DTO.UI
             pnlNavActive.Height = btnDashboard.Height + 10;
             pnlNavActive.Top = btnDashboard.Top;
             pnlNavActive.Left = 0;
-            MessageBox.Show(btnDashboard.Location.Y.ToString());
-
             AddLoadding();
             th.Start();
         }
@@ -217,7 +200,9 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadIMportBillManagerControl));
                     return;
                 }
+                UCImportBillManager importBillM = new UCImportBillManager();
                 plnContent.Controls.Clear();
+
                 plnContent.Controls.Add(importBillM);
             }
             catch
@@ -241,6 +226,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadBillManageControl));
                     return;
                 }
+                UCBillManager billM = new UCBillManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(billM);
             }
@@ -265,6 +251,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadStaffManagerControl));
                     return;
                 }
+                UCStaffManager staffM = new UCStaffManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(staffM);
             }
@@ -289,6 +276,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadUserManagerControl));
                     return;
                 }
+                UCUserManager userM = new UCUserManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(userM);
             }
@@ -314,6 +302,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadProviderManagerControl));
                     return;
                 }
+                UCProviderManager providerM = new UCProviderManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(providerM);
             }
@@ -338,6 +327,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadDashboard));
                     return;
                 }
+                UCDashboard dash = new UCDashboard();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(dash);
             }
@@ -362,6 +352,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadCustomerManagerControl));
                     return;
                 }
+                UCCustomersManager customerM = new UCCustomersManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(customerM);
             }
@@ -386,6 +377,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadProductManagerControl));
                     return;
                 }
+                UCProductManager productM = new UCProductManager();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(productM);
             }
@@ -396,7 +388,6 @@ namespace QShopManagement.DTO.UI
         }
         void AddLoadding()
         {
-
             plnContent.Controls.Clear();
             loadding load = new loadding();
             load.BackColor = plnContent.BackColor;

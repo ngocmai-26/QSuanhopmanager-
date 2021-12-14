@@ -32,15 +32,23 @@ namespace QShopManagement.DTO.UI
 
         internal void Show_()
         {
-            if (this.InvokeRequired)
+            try
             {
-                this.Invoke(new Action(Show_));
-                return;
+                if (this.InvokeRequired)
+                {
+                    this.Invoke(new Action(Show_));
+                    return;
+                }
+                txtPassword.Clear();
+                txtUserName.Clear();
+                this.Show();
+                this.Activate();
             }
-            txtPassword.Clear();
-            txtUserName.Clear();
-            this.Show();
-            this.Activate();
+            catch
+            {
+                
+            }
+           
         }
     }
 }

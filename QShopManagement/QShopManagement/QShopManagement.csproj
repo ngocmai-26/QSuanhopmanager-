@@ -61,6 +61,7 @@
     <Compile Include="CONTROLLER\BaseController.cs" />
     <Compile Include="CONTROLLER\DashboardController.cs" />
     <Compile Include="CONTROLLER\LoginController.cs" />
+    <Compile Include="CONTROLLER\StaffManagerController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -139,6 +140,7 @@
     <Compile Include="DTO\UI\frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper\Helper.cs" />
     <Compile Include="MODEL\DAO\AuthenticateDao.cs" />
     <Compile Include="MODEL\DAO\BaseDao.cs" />
     <Compile Include="MODEL\DAO\CTImportBillDao.cs" />
@@ -159,7 +161,9 @@
     <Compile Include="MODEL\DAO\IUserDao.cs" />
     <Compile Include="MODEL\DAO\ProductDao.cs" />
     <Compile Include="MODEL\DAO\StaffDao.cs" />
+    <Compile Include="MODEL\DAO\StaffManagerDao.cs" />
     <Compile Include="MODEL\DAO\UserDao.cs" />
+    <Compile Include="MODEL\DAO\ProviderDao.cs" />
     <Compile Include="MODEL\EF\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -205,7 +209,6 @@
     <Compile Include="MODEL\EF\tbl_TAIKHOAN.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
-    <Compile Include="MODEL\DAO\ProviderDao.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="DTO\UC\loadding.resx">
@@ -277,18 +280,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="MODEL\EF\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="MODEL\EF\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\258339045_392196179303007_6450734899595293411_n.jpg" />
@@ -367,6 +358,19 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="MODEL\EF\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="MODEL\EF\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

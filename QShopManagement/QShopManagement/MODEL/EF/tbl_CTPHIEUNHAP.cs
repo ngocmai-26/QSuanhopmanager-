@@ -19,6 +19,7 @@ namespace QShopManagement.MODEL.EF
         public int SLNhap { get; set; }
         public int DonGiaNhap { get; set; }
         public string size { get; set; }
+        public int ID { get; set; }
     
         public virtual tbl_HANGHOA tbl_HANGHOA { get; set; }
         public virtual tbl_PHIEUNHAPKHO tbl_PHIEUNHAPKHO { get; set; }

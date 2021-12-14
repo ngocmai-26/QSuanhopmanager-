@@ -10,34 +10,26 @@
     <Property Name="version" Type="int" />
     <Property Name="definition" Type="varbinary(max)" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'QLCH.dbo.tbl_CTHOADON' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="tbl_CTHOADON">
     <Key>
-      <PropertyRef Name="MaHD" />
-      <PropertyRef Name="MaHH" />
-      <PropertyRef Name="Soluong" />
-      <PropertyRef Name="size" />
+      <PropertyRef Name="ID" />
     </Key>
     <Property Name="MaHD" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="MaHH" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="Soluong" Type="int" Nullable="false" />
     <Property Name="size" Type="nvarchar" MaxLength="15" Nullable="false" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
-  <!--Errors Found During Generation:
-warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
   <EntityType Name="tbl_CTPHIEUNHAP">
     <Key>
-      <PropertyRef Name="MaSoPhieu" />
-      <PropertyRef Name="MaHH" />
-      <PropertyRef Name="SLNhap" />
-      <PropertyRef Name="DonGiaNhap" />
+      <PropertyRef Name="ID" />
     </Key>
     <Property Name="MaSoPhieu" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="MaHH" Type="nvarchar" MaxLength="10" Nullable="false" />
     <Property Name="SLNhap" Type="int" Nullable="false" />
     <Property Name="DonGiaNhap" Type="int" Nullable="false" />
     <Property Name="size" Type="nvarchar" MaxLength="15" />
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
   </EntityType>
   <EntityType Name="tbl_HANGHOA">
     <Key>
@@ -209,6 +201,8 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
   </Association>
   <EntityContainer Name="QLCHModelStoreContainer">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_HANGHOA" EntityType="Self.tbl_HANGHOA" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_HOADON" EntityType="Self.tbl_HOADON" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_KHACHHANG" EntityType="Self.tbl_KHACHHANG" Schema="dbo" store:Type="Tables" />
@@ -216,23 +210,6 @@ warning 6002: The table/view 'QLCH.dbo.tbl_CTPHIEUNHAP' does not have a primary 
     <EntitySet Name="tbl_NHANVIEN" EntityType="Self.tbl_NHANVIEN" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_PHIEUNHAPKHO" EntityType="Self.tbl_PHIEUNHAPKHO" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="tbl_TAIKHOAN" EntityType="Self.tbl_TAIKHOAN" Schema="dbo" store:Type="Tables" />
-    <EntitySet Name="tbl_CTHOADON" EntityType="Self.tbl_CTHOADON" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [tbl_CTHOADON].[MaHD] AS [MaHD], 
-    [tbl_CTHOADON].[MaHH] AS [MaHH], 
-    [tbl_CTHOADON].[Soluong] AS [Soluong], 
-    [tbl_CTHOADON].[size] AS [size]
-    FROM [dbo].[tbl_CTHOADON] AS [tbl_CTHOADON]</DefiningQuery>
-    </EntitySet>
-    <EntitySet Name="tbl_CTPHIEUNHAP" EntityType="Self.tbl_CTPHIEUNHAP" store:Type="Tables" store:Schema="dbo">
-      <DefiningQuery>SELECT 
-    [tbl_CTPHIEUNHAP].[MaSoPhieu] AS [MaSoPhieu], 
-    [tbl_CTPHIEUNHAP].[MaHH] AS [MaHH], 
-    [tbl_CTPHIEUNHAP].[SLNhap] AS [SLNhap], 
-    [tbl_CTPHIEUNHAP].[DonGiaNhap] AS [DonGiaNhap], 
-    [tbl_CTPHIEUNHAP].[size] AS [size]
-    FROM [dbo].[tbl_CTPHIEUNHAP] AS [tbl_CTPHIEUNHAP]</DefiningQuery>
-    </EntitySet>
     <AssociationSet Name="FK_tbl_CTHOADON_tbl_HANGHOA" Association="Self.FK_tbl_CTHOADON_tbl_HANGHOA">
       <End Role="tbl_HANGHOA" EntitySet="tbl_HANGHOA" />
       <End Role="tbl_CTHOADON" EntitySet="tbl_CTHOADON" />
