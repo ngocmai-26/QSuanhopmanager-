@@ -77,12 +77,6 @@
     <Compile Include="DTO\UC\UCBill.Designer.cs">
       <DependentUpon>UCBill.cs</DependentUpon>
     </Compile>
-    <Compile Include="DTO\UC\UCBillManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DTO\UC\UCBillManager.Designer.cs">
-      <DependentUpon>UCBillManager.cs</DependentUpon>
-    </Compile>
     <Compile Include="DTO\UC\UCCustomersManager.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -131,11 +125,23 @@
     <Compile Include="DTO\UC\UCUserManager.Designer.cs">
       <DependentUpon>UCUserManager.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UI\frmAddBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmAddBill.Designer.cs">
+      <DependentUpon>frmAddBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UI\frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTO\UI\frmControl.Designer.cs">
       <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmGetQuantity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmGetQuantity.Designer.cs">
+      <DependentUpon>frmGetQuantity.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UI\frmLogin.cs">
       <SubType>Form</SubType>
@@ -223,9 +229,6 @@
     <EmbeddedResource Include="DTO\UC\UCBill.resx">
       <DependentUpon>UCBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UC\UCBillManager.resx">
-      <DependentUpon>UCBillManager.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCCustomersManager.resx">
       <DependentUpon>UCCustomersManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -250,8 +253,14 @@
     <EmbeddedResource Include="DTO\UC\UCUserManager.resx">
       <DependentUpon>UCUserManager.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmAddBill.resx">
+      <DependentUpon>frmAddBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmGetQuantity.resx">
+      <DependentUpon>frmGetQuantity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>

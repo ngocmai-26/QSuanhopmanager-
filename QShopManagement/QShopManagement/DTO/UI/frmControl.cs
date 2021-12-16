@@ -226,7 +226,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadBillManageControl));
                     return;
                 }
-                UCBillManager billM = new UCBillManager();
+                UCBill billM = new UCBill();
                 plnContent.Controls.Clear();
                 plnContent.Controls.Add(billM);
             }

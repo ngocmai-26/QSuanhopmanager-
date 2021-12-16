@@ -16,7 +16,7 @@ namespace QShopManagement
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmControl("Quanly"));
+            Application.Run(new frmControl("Ketoan"));
         }
     }
 }
