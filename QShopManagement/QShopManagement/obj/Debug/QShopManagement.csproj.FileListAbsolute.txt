@@ -54,3 +54,4 @@ D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DT
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCCustomersManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmAddBill.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmGetQuantity.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.CopyComplete
