@@ -226,9 +226,5 @@ namespace QShopManagement.DTO.UC
 
         }
 
-        private void txtMaNV_TextChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

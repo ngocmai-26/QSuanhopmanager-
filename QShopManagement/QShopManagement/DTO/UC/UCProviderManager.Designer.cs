@@ -49,10 +49,10 @@ namespace QShopManagement.DTO.UC
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel5 = new Guna.UI2.WinForms.Guna2Panel();
+            this.btnClearInput = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2HtmlLabel1 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnClearInput = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvProviders)).BeginInit();
             this.guna2Panel4.SuspendLayout();
@@ -67,7 +67,7 @@ namespace QShopManagement.DTO.UC
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
             this.guna2HtmlLabel6.Location = new System.Drawing.Point(935, 30);
-            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel6.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(55, 27);
             this.guna2HtmlLabel6.TabIndex = 13;
@@ -75,13 +75,14 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2HtmlLabel5
             // 
+            this.guna2HtmlLabel5.AutoSize = false;
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(805, 118);
-            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(831, 118);
+            this.guna2HtmlLabel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
-            this.guna2HtmlLabel5.Size = new System.Drawing.Size(103, 27);
+            this.guna2HtmlLabel5.Size = new System.Drawing.Size(188, 36);
             this.guna2HtmlLabel5.TabIndex = 11;
             this.guna2HtmlLabel5.Text = "Loại Hàng : ";
             // 
@@ -101,7 +102,7 @@ namespace QShopManagement.DTO.UC
             this.txtNumberPhone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtNumberPhone.HoverState.Parent = this.txtNumberPhone;
             this.txtNumberPhone.Location = new System.Drawing.Point(1007, 21);
-            this.txtNumberPhone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtNumberPhone.Margin = new System.Windows.Forms.Padding(4);
             this.txtNumberPhone.Name = "txtNumberPhone";
             this.txtNumberPhone.PasswordChar = '\0';
             this.txtNumberPhone.PlaceholderText = "";
@@ -127,7 +128,7 @@ namespace QShopManagement.DTO.UC
             this.txtLoaiHang.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtLoaiHang.HoverState.Parent = this.txtLoaiHang;
             this.txtLoaiHang.Location = new System.Drawing.Point(961, 110);
-            this.txtLoaiHang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtLoaiHang.Margin = new System.Windows.Forms.Padding(4);
             this.txtLoaiHang.Name = "txtLoaiHang";
             this.txtLoaiHang.PasswordChar = '\0';
             this.txtLoaiHang.PlaceholderText = "";
@@ -139,13 +140,14 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2HtmlLabel3
             // 
+            this.guna2HtmlLabel3.AutoSize = false;
             this.guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
             this.guna2HtmlLabel3.Location = new System.Drawing.Point(313, 30);
-            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel3.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel3.Name = "guna2HtmlLabel3";
-            this.guna2HtmlLabel3.Size = new System.Drawing.Size(98, 27);
+            this.guna2HtmlLabel3.Size = new System.Drawing.Size(181, 35);
             this.guna2HtmlLabel3.TabIndex = 7;
             this.guna2HtmlLabel3.Text = "Tên NCC : ";
             // 
@@ -165,7 +167,7 @@ namespace QShopManagement.DTO.UC
             this.txtCCName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtCCName.HoverState.Parent = this.txtCCName;
             this.txtCCName.Location = new System.Drawing.Point(433, 21);
-            this.txtCCName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtCCName.Margin = new System.Windows.Forms.Padding(4);
             this.txtCCName.Name = "txtCCName";
             this.txtCCName.PasswordChar = '\0';
             this.txtCCName.PlaceholderText = "";
@@ -177,13 +179,14 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
             this.guna2HtmlLabel2.Location = new System.Drawing.Point(33, 30);
-            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(75, 27);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(121, 35);
             this.guna2HtmlLabel2.TabIndex = 5;
             this.guna2HtmlLabel2.Text = "MNCC :  ";
             // 
@@ -203,7 +206,7 @@ namespace QShopManagement.DTO.UC
             this.txtMaCC.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaCC.HoverState.Parent = this.txtMaCC;
             this.txtMaCC.Location = new System.Drawing.Point(111, 21);
-            this.txtMaCC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtMaCC.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaCC.Name = "txtMaCC";
             this.txtMaCC.PasswordChar = '\0';
             this.txtMaCC.PlaceholderText = "";
@@ -227,7 +230,7 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel2.Controls.Add(this.txtMaCC);
             this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.guna2Panel2.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
             this.guna2Panel2.Size = new System.Drawing.Size(1267, 193);
@@ -235,13 +238,14 @@ namespace QShopManagement.DTO.UC
             // 
             // guna2HtmlLabel4
             // 
+            this.guna2HtmlLabel4.AutoSize = false;
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
             this.guna2HtmlLabel4.Location = new System.Drawing.Point(23, 127);
-            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2HtmlLabel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
-            this.guna2HtmlLabel4.Size = new System.Drawing.Size(78, 27);
+            this.guna2HtmlLabel4.Size = new System.Drawing.Size(141, 35);
             this.guna2HtmlLabel4.TabIndex = 15;
             this.guna2HtmlLabel4.Text = "Địa Chỉ : ";
             // 
@@ -261,7 +265,7 @@ namespace QShopManagement.DTO.UC
             this.txtDiaChi.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtDiaChi.HoverState.Parent = this.txtDiaChi;
             this.txtDiaChi.Location = new System.Drawing.Point(143, 118);
-            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.txtDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.txtDiaChi.Name = "txtDiaChi";
             this.txtDiaChi.PasswordChar = '\0';
             this.txtDiaChi.PlaceholderText = "";
@@ -300,7 +304,7 @@ namespace QShopManagement.DTO.UC
             this.dgvProviders.EnableHeadersVisualStyles = false;
             this.dgvProviders.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvProviders.Location = new System.Drawing.Point(33, 21);
-            this.dgvProviders.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.dgvProviders.Margin = new System.Windows.Forms.Padding(4);
             this.dgvProviders.Name = "dgvProviders";
             this.dgvProviders.RowHeadersVisible = false;
             this.dgvProviders.RowHeadersWidth = 51;
@@ -335,7 +339,7 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel4.Controls.Add(this.dgvProviders);
             this.guna2Panel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel4.Location = new System.Drawing.Point(0, 0);
-            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel4.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel4.Name = "guna2Panel4";
             this.guna2Panel4.ShadowDecoration.Parent = this.guna2Panel4;
             this.guna2Panel4.Size = new System.Drawing.Size(1019, 405);
@@ -359,7 +363,7 @@ namespace QShopManagement.DTO.UC
             this.btnRemove.HoverState.Parent = this.btnRemove;
             this.btnRemove.IndicateFocus = true;
             this.btnRemove.Location = new System.Drawing.Point(52, 198);
-            this.btnRemove.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.ShadowDecoration.Parent = this.btnRemove;
             this.btnRemove.Size = new System.Drawing.Size(145, 42);
@@ -386,7 +390,7 @@ namespace QShopManagement.DTO.UC
             this.btnUpdate.HoverState.Parent = this.btnUpdate;
             this.btnUpdate.IndicateFocus = true;
             this.btnUpdate.Location = new System.Drawing.Point(52, 107);
-            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
             this.btnUpdate.Size = new System.Drawing.Size(145, 42);
@@ -412,7 +416,7 @@ namespace QShopManagement.DTO.UC
             this.btnAdd.HoverState.Parent = this.btnAdd;
             this.btnAdd.IndicateFocus = true;
             this.btnAdd.Location = new System.Drawing.Point(52, 21);
-            this.btnAdd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
             this.btnAdd.Size = new System.Drawing.Size(145, 42);
@@ -429,47 +433,11 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel5.Controls.Add(this.btnAdd);
             this.guna2Panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.guna2Panel5.Location = new System.Drawing.Point(1019, 0);
-            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.guna2Panel5.Margin = new System.Windows.Forms.Padding(4);
             this.guna2Panel5.Name = "guna2Panel5";
             this.guna2Panel5.ShadowDecoration.Parent = this.guna2Panel5;
             this.guna2Panel5.Size = new System.Drawing.Size(248, 405);
             this.guna2Panel5.TabIndex = 1;
-            // 
-            // guna2Panel3
-            // 
-            this.guna2Panel3.Controls.Add(this.guna2Panel5);
-            this.guna2Panel3.Controls.Add(this.guna2Panel4);
-            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.guna2Panel3.Location = new System.Drawing.Point(0, 193);
-            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Panel3.Name = "guna2Panel3";
-            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
-            this.guna2Panel3.Size = new System.Drawing.Size(1267, 405);
-            this.guna2Panel3.TabIndex = 1;
-            // 
-            // guna2Panel1
-            // 
-            this.guna2Panel1.Controls.Add(this.guna2Panel3);
-            this.guna2Panel1.Controls.Add(this.guna2Panel2);
-            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2Panel1.Location = new System.Drawing.Point(0, 137);
-            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(1267, 598);
-            this.guna2Panel1.TabIndex = 5;
-            // 
-            // guna2HtmlLabel1
-            // 
-            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(389, 36);
-            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(427, 32);
-            this.guna2HtmlLabel1.TabIndex = 4;
-            this.guna2HtmlLabel1.Text = "Quản Lý Thông Tin Nhà Cung Cấp";
             // 
             // btnClearInput
             // 
@@ -498,6 +466,43 @@ namespace QShopManagement.DTO.UC
             this.btnClearInput.UseTransparentBackground = true;
             this.btnClearInput.Click += new System.EventHandler(this.btnClearInput_Click);
             // 
+            // guna2Panel3
+            // 
+            this.guna2Panel3.Controls.Add(this.guna2Panel5);
+            this.guna2Panel3.Controls.Add(this.guna2Panel4);
+            this.guna2Panel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.guna2Panel3.Location = new System.Drawing.Point(0, 193);
+            this.guna2Panel3.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel3.Name = "guna2Panel3";
+            this.guna2Panel3.ShadowDecoration.Parent = this.guna2Panel3;
+            this.guna2Panel3.Size = new System.Drawing.Size(1267, 405);
+            this.guna2Panel3.TabIndex = 1;
+            // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.Controls.Add(this.guna2Panel3);
+            this.guna2Panel1.Controls.Add(this.guna2Panel2);
+            this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2Panel1.Location = new System.Drawing.Point(0, 137);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
+            this.guna2Panel1.Size = new System.Drawing.Size(1267, 598);
+            this.guna2Panel1.TabIndex = 5;
+            // 
+            // guna2HtmlLabel1
+            // 
+            this.guna2HtmlLabel1.AutoSize = false;
+            this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(389, 36);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
+            this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(516, 43);
+            this.guna2HtmlLabel1.TabIndex = 4;
+            this.guna2HtmlLabel1.Text = "Quản Lý Thông Tin Nhà Cung Cấp";
+            // 
             // UCProviderManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -505,7 +510,7 @@ namespace QShopManagement.DTO.UC
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.Controls.Add(this.guna2Panel1);
             this.Controls.Add(this.guna2HtmlLabel1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCProviderManager";
             this.Size = new System.Drawing.Size(1267, 735);
             this.guna2Panel2.ResumeLayout(false);
@@ -516,7 +521,6 @@ namespace QShopManagement.DTO.UC
             this.guna2Panel3.ResumeLayout(false);
             this.guna2Panel1.ResumeLayout(false);
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 

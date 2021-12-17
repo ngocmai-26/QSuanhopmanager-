@@ -144,5 +144,26 @@ namespace QShopManagement.DTO.UC
                 MessageBox.Show("Có Một Số Lỗi Xảy Ra");
             }
         }
+
+        private void UCCustomersManager_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+            ValidForm();
+            if (isValid)
+            {
+                tbl_KHACHHANG customer = new tbl_KHACHHANG()
+                {
+                    MaKH = txtMaKH.Text,
+                    TenKH = txtTenKH.Text,
+                    SDT = txtSDT.Text,
+                    DC = txtDiaChi.Text,
+                };
+                ctrlCustomers.AddCustomer(customer);
+            }
+        }
     }
 }

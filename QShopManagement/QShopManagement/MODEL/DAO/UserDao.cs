@@ -22,34 +22,76 @@ namespace QShopManagement.MODEL.DAO
         {
             return await DB_.tbl_TAIKHOAN.CountAsync();
         }
-        public Task<bool> Add(tbl_TAIKHOAN ef)
+        public async Task<bool> Add(tbl_TAIKHOAN ef)
         {
-            throw new NotImplementedException();
+            try
+            {
+                DB_.tbl_TAIKHOAN.Add(ef);
+                await DB_.SaveChangesAsync();
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<List<tbl_TAIKHOAN>> GetAll()
+        public async Task<List<tbl_TAIKHOAN>> GetAll()
         {
-            throw new NotImplementedException();
+            return await DB_.tbl_TAIKHOAN.ToListAsync();
         }
 
-        public Task<tbl_TAIKHOAN> GetSingleByID(string ID)
+        public async Task<tbl_TAIKHOAN> GetSingleByID(string ID)
         {
-            throw new NotImplementedException();
+            return await DB_.tbl_TAIKHOAN.FindAsync(ID);
         }
 
-        public async Task<tbl_TAIKHOAN> GetSingleByUserNameAndPassword(string username,string password)
+        public async Task<tbl_TAIKHOAN> GetSingleByUserNameAndPassword(string username, string password)
         {
             return await DB_.tbl_TAIKHOAN.Where(tk => tk.UserNam.Equals(username) && tk.Password.Equals(password)).FirstOrDefaultAsync();
         }
 
-        public Task<bool> Remove(string ID)
+        public async Task<bool> Remove(string ID)
         {
-            throw new NotImplementedException();
+            try
+            {
+                //xoa rang buoc
+                var staffOfAccount = await DB_.tbl_NHANVIEN.Where(ct => ct.MSNV.Equals(ID)).ToListAsync();
+
+                if (staffOfAccount.Count > 0)
+                {
+                    DB_.tbl_NHANVIEN.RemoveRange(staffOfAccount);
+                    await DB_.SaveChangesAsync();
+                }
+                var ef = await GetSingleByID(ID);
+                if (ef != null)
+                {
+                    DB_.tbl_TAIKHOAN.Remove(ef);
+                    await DB_.SaveChangesAsync();
+                    return true;
+                }
+                return false;
+            }
+            catch (Exception ex)
+            {
+                return false;
+            }
         }
 
-        public Task<bool> Update(tbl_TAIKHOAN ef)
+        public async Task<bool> Update(tbl_TAIKHOAN ef)
         {
-            throw new NotImplementedException();
+            var ef_ = await GetSingleByID(ef.MSNV);
+            if (ef_ != null)
+            {
+                ef_.MSNV = ef.MSNV;
+                ef_.UserNam = ef.UserNam;
+                ef_.Password = ef.Password;
+                ef_.HieuLuc = ef.HieuLuc;
+                ef_.role = ef.role;
+                await DB_.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }

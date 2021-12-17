@@ -65,6 +65,7 @@
     <Compile Include="CONTROLLER\ProductManagerController.cs" />
     <Compile Include="CONTROLLER\ProviderManagerController.cs" />
     <Compile Include="CONTROLLER\StaffManagerController.cs" />
+    <Compile Include="CONTROLLER\UserManagerController.cs" />
     <Compile Include="DTO\UC\loadding.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -94,12 +95,6 @@
     </Compile>
     <Compile Include="DTO\UC\UCImportBill.Designer.cs">
       <DependentUpon>UCImportBill.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DTO\UC\UCImportBillManager.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="DTO\UC\UCImportBillManager.Designer.cs">
-      <DependentUpon>UCImportBillManager.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UC\UCProductManager.cs">
       <SubType>UserControl</SubType>
@@ -131,11 +126,23 @@
     <Compile Include="DTO\UI\frmAddBill.Designer.cs">
       <DependentUpon>frmAddBill.cs</DependentUpon>
     </Compile>
+    <Compile Include="DTO\UI\frmAddImportBill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmAddImportBill.Designer.cs">
+      <DependentUpon>frmAddImportBill.cs</DependentUpon>
+    </Compile>
     <Compile Include="DTO\UI\frmControl.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="DTO\UI\frmControl.Designer.cs">
       <DependentUpon>frmControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DTO\UI\frmGetQuantily2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DTO\UI\frmGetQuantily2.Designer.cs">
+      <DependentUpon>frmGetQuantily2.cs</DependentUpon>
     </Compile>
     <Compile Include="DTO\UI\frmGetQuantity.cs">
       <SubType>Form</SubType>
@@ -176,6 +183,7 @@
     <Compile Include="MODEL\DAO\StaffManagerDao.cs" />
     <Compile Include="MODEL\DAO\UserDao.cs" />
     <Compile Include="MODEL\DAO\ProviderDao.cs" />
+    <Compile Include="MODEL\DAO\UserManagerDao.cs" />
     <Compile Include="MODEL\EF\Model1.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -238,9 +246,6 @@
     <EmbeddedResource Include="DTO\UC\UCImportBill.resx">
       <DependentUpon>UCImportBill.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DTO\UC\UCImportBillManager.resx">
-      <DependentUpon>UCImportBillManager.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UC\UCProductManager.resx">
       <DependentUpon>UCProductManager.cs</DependentUpon>
     </EmbeddedResource>
@@ -256,8 +261,14 @@
     <EmbeddedResource Include="DTO\UI\frmAddBill.resx">
       <DependentUpon>frmAddBill.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmAddImportBill.resx">
+      <DependentUpon>frmAddImportBill.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmControl.resx">
       <DependentUpon>frmControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DTO\UI\frmGetQuantily2.resx">
+      <DependentUpon>frmGetQuantily2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="DTO\UI\frmGetQuantity.resx">
       <DependentUpon>frmGetQuantity.cs</DependentUpon>

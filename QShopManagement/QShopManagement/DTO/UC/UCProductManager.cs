@@ -190,5 +190,6 @@ namespace QShopManagement.DTO.UC
                 }
             }
         }
+
     }
 }

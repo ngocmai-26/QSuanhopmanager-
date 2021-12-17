@@ -63,7 +63,7 @@ namespace QShopManagement.DTO.UI
             }
             else if (role_.Equals("Quankho"))
             {
-                btnProductManager.Enabled = true;
+                btnImportBills.Enabled = true;
                 MessageBox.Show("Bạn Đã Đăng Nhập Dưới Quản Kho !");
 
 
@@ -200,7 +200,7 @@ namespace QShopManagement.DTO.UI
                     plnContent.Invoke(new Action(LoadIMportBillManagerControl));
                     return;
                 }
-                UCImportBillManager importBillM = new UCImportBillManager();
+                UCImportBill importBillM = new UCImportBill();
                 plnContent.Controls.Clear();
 
                 plnContent.Controls.Add(importBillM);

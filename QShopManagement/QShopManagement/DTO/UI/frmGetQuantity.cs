@@ -37,6 +37,10 @@ namespace QShopManagement.DTO.UI
             }
           
         }
-        
+
+        private void frmGetQuantity_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

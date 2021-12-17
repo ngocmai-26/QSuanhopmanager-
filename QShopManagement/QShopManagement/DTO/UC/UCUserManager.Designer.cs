@@ -29,16 +29,16 @@ namespace QShopManagement.DTO.UC
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.plnAddAccount = new Guna.UI2.WinForms.Guna2Panel();
+            this.txtrole = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnRemove = new Guna.UI2.WinForms.Guna2Button();
             this.btnUpdate = new Guna.UI2.WinForms.Guna2Button();
-            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtPhoneNumber = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtHieuluc = new Guna.UI2.WinForms.Guna2TextBox();
             this.txtUserName = new Guna.UI2.WinForms.Guna2TextBox();
-            this.txtTenNV = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPassword = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnAdd = new Guna.UI2.WinForms.Guna2Button();
             this.txtMaNV = new Guna.UI2.WinForms.Guna2TextBox();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
@@ -50,22 +50,48 @@ namespace QShopManagement.DTO.UC
             // 
             // plnAddAccount
             // 
+            this.plnAddAccount.Controls.Add(this.txtrole);
             this.plnAddAccount.Controls.Add(this.btnRemove);
             this.plnAddAccount.Controls.Add(this.btnUpdate);
-            this.plnAddAccount.Controls.Add(this.txtPassword);
-            this.plnAddAccount.Controls.Add(this.txtPhoneNumber);
+            this.plnAddAccount.Controls.Add(this.txtHieuluc);
             this.plnAddAccount.Controls.Add(this.txtUserName);
-            this.plnAddAccount.Controls.Add(this.txtTenNV);
+            this.plnAddAccount.Controls.Add(this.txtPassword);
             this.plnAddAccount.Controls.Add(this.btnAdd);
             this.plnAddAccount.Controls.Add(this.txtMaNV);
             this.plnAddAccount.Controls.Add(this.guna2HtmlLabel2);
             this.plnAddAccount.Dock = System.Windows.Forms.DockStyle.Left;
             this.plnAddAccount.Location = new System.Drawing.Point(0, 0);
+            this.plnAddAccount.Margin = new System.Windows.Forms.Padding(4);
             this.plnAddAccount.Name = "plnAddAccount";
             this.plnAddAccount.ShadowDecoration.Parent = this.plnAddAccount;
-            this.plnAddAccount.Size = new System.Drawing.Size(295, 597);
+            this.plnAddAccount.Size = new System.Drawing.Size(393, 735);
             this.plnAddAccount.TabIndex = 0;
-            this.plnAddAccount.Paint += new System.Windows.Forms.PaintEventHandler(this.plnAddAccount_Paint);
+            // 
+            // txtrole
+            // 
+            this.txtrole.BorderRadius = 6;
+            this.txtrole.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtrole.DefaultText = "";
+            this.txtrole.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtrole.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtrole.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtrole.DisabledState.Parent = this.txtrole;
+            this.txtrole.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtrole.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtrole.FocusedState.Parent = this.txtrole;
+            this.txtrole.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtrole.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtrole.HoverState.Parent = this.txtrole;
+            this.txtrole.Location = new System.Drawing.Point(37, 420);
+            this.txtrole.Margin = new System.Windows.Forms.Padding(4);
+            this.txtrole.Name = "txtrole";
+            this.txtrole.PasswordChar = '\0';
+            this.txtrole.PlaceholderText = "role";
+            this.txtrole.SelectedText = "";
+            this.txtrole.ShadowDecoration.Parent = this.txtrole;
+            this.txtrole.Size = new System.Drawing.Size(332, 44);
+            this.txtrole.TabIndex = 16;
+            this.txtrole.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // btnRemove
             // 
@@ -84,13 +110,15 @@ namespace QShopManagement.DTO.UC
             this.btnRemove.ForeColor = System.Drawing.Color.White;
             this.btnRemove.HoverState.Parent = this.btnRemove;
             this.btnRemove.IndicateFocus = true;
-            this.btnRemove.Location = new System.Drawing.Point(28, 505);
+            this.btnRemove.Location = new System.Drawing.Point(37, 622);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(4);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.ShadowDecoration.Parent = this.btnRemove;
-            this.btnRemove.Size = new System.Drawing.Size(249, 38);
+            this.btnRemove.Size = new System.Drawing.Size(332, 47);
             this.btnRemove.TabIndex = 15;
             this.btnRemove.Text = "Xóa";
             this.btnRemove.UseTransparentBackground = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnUpdate
             // 
@@ -109,65 +137,41 @@ namespace QShopManagement.DTO.UC
             this.btnUpdate.ForeColor = System.Drawing.Color.White;
             this.btnUpdate.HoverState.Parent = this.btnUpdate;
             this.btnUpdate.IndicateFocus = true;
-            this.btnUpdate.Location = new System.Drawing.Point(168, 452);
+            this.btnUpdate.Location = new System.Drawing.Point(224, 556);
+            this.btnUpdate.Margin = new System.Windows.Forms.Padding(4);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.ShadowDecoration.Parent = this.btnUpdate;
-            this.btnUpdate.Size = new System.Drawing.Size(109, 34);
+            this.btnUpdate.Size = new System.Drawing.Size(145, 42);
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Sửa";
             this.btnUpdate.UseTransparentBackground = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
-            // txtPassword
+            // txtHieuluc
             // 
-            this.txtPassword.BorderRadius = 6;
-            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPassword.DefaultText = "";
-            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.DisabledState.Parent = this.txtPassword;
-            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.FocusedState.Parent = this.txtPassword;
-            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPassword.HoverState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(28, 380);
-            this.txtPassword.Name = "txtPassword";
-            this.txtPassword.PasswordChar = '\0';
-            this.txtPassword.PlaceholderText = "Mật Khẩu";
-            this.txtPassword.SelectedText = "";
-            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
-            this.txtPassword.Size = new System.Drawing.Size(249, 36);
-            this.txtPassword.TabIndex = 11;
-            this.txtPassword.TextOffset = new System.Drawing.Point(10, 0);
-            this.txtPassword.UseSystemPasswordChar = true;
-            this.txtPassword.TextChanged += new System.EventHandler(this.guna2TextBox1_TextChanged);
-            // 
-            // txtPhoneNumber
-            // 
-            this.txtPhoneNumber.BorderRadius = 6;
-            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtPhoneNumber.DefaultText = "";
-            this.txtPhoneNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtPhoneNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtPhoneNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhoneNumber.DisabledState.Parent = this.txtPhoneNumber;
-            this.txtPhoneNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtPhoneNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhoneNumber.FocusedState.Parent = this.txtPhoneNumber;
-            this.txtPhoneNumber.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtPhoneNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtPhoneNumber.HoverState.Parent = this.txtPhoneNumber;
-            this.txtPhoneNumber.Location = new System.Drawing.Point(28, 313);
-            this.txtPhoneNumber.Name = "txtPhoneNumber";
-            this.txtPhoneNumber.PasswordChar = '\0';
-            this.txtPhoneNumber.PlaceholderText = "SDT";
-            this.txtPhoneNumber.SelectedText = "";
-            this.txtPhoneNumber.ShadowDecoration.Parent = this.txtPhoneNumber;
-            this.txtPhoneNumber.Size = new System.Drawing.Size(249, 36);
-            this.txtPhoneNumber.TabIndex = 10;
-            this.txtPhoneNumber.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtHieuluc.BorderRadius = 6;
+            this.txtHieuluc.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHieuluc.DefaultText = "";
+            this.txtHieuluc.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtHieuluc.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtHieuluc.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHieuluc.DisabledState.Parent = this.txtHieuluc;
+            this.txtHieuluc.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtHieuluc.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHieuluc.FocusedState.Parent = this.txtHieuluc;
+            this.txtHieuluc.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtHieuluc.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtHieuluc.HoverState.Parent = this.txtHieuluc;
+            this.txtHieuluc.Location = new System.Drawing.Point(37, 358);
+            this.txtHieuluc.Margin = new System.Windows.Forms.Padding(4);
+            this.txtHieuluc.Name = "txtHieuluc";
+            this.txtHieuluc.PasswordChar = '\0';
+            this.txtHieuluc.PlaceholderText = "Hiệu Lực";
+            this.txtHieuluc.SelectedText = "";
+            this.txtHieuluc.ShadowDecoration.Parent = this.txtHieuluc;
+            this.txtHieuluc.Size = new System.Drawing.Size(332, 44);
+            this.txtHieuluc.TabIndex = 10;
+            this.txtHieuluc.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // txtUserName
             // 
@@ -184,40 +188,42 @@ namespace QShopManagement.DTO.UC
             this.txtUserName.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.HoverState.Parent = this.txtUserName;
-            this.txtUserName.Location = new System.Drawing.Point(28, 247);
+            this.txtUserName.Location = new System.Drawing.Point(37, 220);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderText = "Tên Đăng Nhập";
             this.txtUserName.SelectedText = "";
             this.txtUserName.ShadowDecoration.Parent = this.txtUserName;
-            this.txtUserName.Size = new System.Drawing.Size(249, 36);
+            this.txtUserName.Size = new System.Drawing.Size(332, 44);
             this.txtUserName.TabIndex = 9;
             this.txtUserName.TextOffset = new System.Drawing.Point(10, 0);
             // 
-            // txtTenNV
+            // txtPassword
             // 
-            this.txtTenNV.BorderRadius = 6;
-            this.txtTenNV.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTenNV.DefaultText = "";
-            this.txtTenNV.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTenNV.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTenNV.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNV.DisabledState.Parent = this.txtTenNV;
-            this.txtTenNV.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTenNV.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNV.FocusedState.Parent = this.txtTenNV;
-            this.txtTenNV.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTenNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTenNV.HoverState.Parent = this.txtTenNV;
-            this.txtTenNV.Location = new System.Drawing.Point(28, 184);
-            this.txtTenNV.Name = "txtTenNV";
-            this.txtTenNV.PasswordChar = '\0';
-            this.txtTenNV.PlaceholderText = "Tên Nhân Viên";
-            this.txtTenNV.SelectedText = "";
-            this.txtTenNV.ShadowDecoration.Parent = this.txtTenNV;
-            this.txtTenNV.Size = new System.Drawing.Size(249, 36);
-            this.txtTenNV.TabIndex = 8;
-            this.txtTenNV.TextOffset = new System.Drawing.Point(10, 0);
+            this.txtPassword.BorderRadius = 6;
+            this.txtPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPassword.DefaultText = "";
+            this.txtPassword.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPassword.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPassword.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.DisabledState.Parent = this.txtPassword;
+            this.txtPassword.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPassword.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.FocusedState.Parent = this.txtPassword;
+            this.txtPassword.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPassword.HoverState.Parent = this.txtPassword;
+            this.txtPassword.Location = new System.Drawing.Point(37, 290);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4);
+            this.txtPassword.Name = "txtPassword";
+            this.txtPassword.PasswordChar = '\0';
+            this.txtPassword.PlaceholderText = "Password";
+            this.txtPassword.SelectedText = "";
+            this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
+            this.txtPassword.Size = new System.Drawing.Size(332, 44);
+            this.txtPassword.TabIndex = 8;
+            this.txtPassword.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // btnAdd
             // 
@@ -235,14 +241,15 @@ namespace QShopManagement.DTO.UC
             this.btnAdd.ForeColor = System.Drawing.Color.White;
             this.btnAdd.HoverState.Parent = this.btnAdd;
             this.btnAdd.IndicateFocus = true;
-            this.btnAdd.Location = new System.Drawing.Point(28, 452);
+            this.btnAdd.Location = new System.Drawing.Point(37, 556);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(4);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.ShadowDecoration.Parent = this.btnAdd;
-            this.btnAdd.Size = new System.Drawing.Size(109, 34);
+            this.btnAdd.Size = new System.Drawing.Size(145, 42);
             this.btnAdd.TabIndex = 3;
             this.btnAdd.Text = "Thêm";
             this.btnAdd.UseTransparentBackground = true;
-            this.btnAdd.Click += new System.EventHandler(this.guna2Button1_Click);
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // txtMaNV
             // 
@@ -259,35 +266,40 @@ namespace QShopManagement.DTO.UC
             this.txtMaNV.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.txtMaNV.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtMaNV.HoverState.Parent = this.txtMaNV;
-            this.txtMaNV.Location = new System.Drawing.Point(28, 122);
+            this.txtMaNV.Location = new System.Drawing.Point(37, 150);
+            this.txtMaNV.Margin = new System.Windows.Forms.Padding(4);
             this.txtMaNV.Name = "txtMaNV";
             this.txtMaNV.PasswordChar = '\0';
             this.txtMaNV.PlaceholderText = "Mã Nhân Viên";
             this.txtMaNV.SelectedText = "";
             this.txtMaNV.ShadowDecoration.Parent = this.txtMaNV;
-            this.txtMaNV.Size = new System.Drawing.Size(249, 36);
+            this.txtMaNV.Size = new System.Drawing.Size(332, 44);
             this.txtMaNV.TabIndex = 3;
             this.txtMaNV.TextOffset = new System.Drawing.Point(10, 0);
             // 
             // guna2HtmlLabel2
             // 
+            this.guna2HtmlLabel2.AutoSize = false;
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(57, 37);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(72, 46);
+            this.guna2HtmlLabel2.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(185, 30);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(317, 41);
             this.guna2HtmlLabel2.TabIndex = 2;
             this.guna2HtmlLabel2.Text = "Thêm Tài Khoản";
             // 
             // guna2HtmlLabel1
             // 
+            this.guna2HtmlLabel1.AutoSize = false;
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Cascadia Code", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(155)))), ((int)(((byte)(185)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(435, 37);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(580, 46);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(354, 30);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(597, 41);
             this.guna2HtmlLabel1.TabIndex = 1;
             this.guna2HtmlLabel1.Text = "Quản Lý Tài Khoản Nhân Viên";
             // 
@@ -297,37 +309,39 @@ namespace QShopManagement.DTO.UC
             this.dgvAccount.AllowUserToDeleteRows = false;
             this.dgvAccount.AllowUserToResizeColumns = false;
             this.dgvAccount.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.dgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.dgvAccount.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvAccount.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvAccount.BackgroundColor = System.Drawing.Color.White;
             this.dgvAccount.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvAccount.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.dgvAccount.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvAccount.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.dgvAccount.ColumnHeadersHeight = 4;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 10.5F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvAccount.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 10.5F);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvAccount.DefaultCellStyle = dataGridViewCellStyle6;
             this.dgvAccount.EnableHeadersVisualStyles = false;
             this.dgvAccount.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.dgvAccount.Location = new System.Drawing.Point(301, 122);
+            this.dgvAccount.Location = new System.Drawing.Point(401, 150);
+            this.dgvAccount.Margin = new System.Windows.Forms.Padding(4);
             this.dgvAccount.Name = "dgvAccount";
             this.dgvAccount.RowHeadersVisible = false;
+            this.dgvAccount.RowHeadersWidth = 51;
             this.dgvAccount.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvAccount.Size = new System.Drawing.Size(620, 421);
+            this.dgvAccount.Size = new System.Drawing.Size(827, 518);
             this.dgvAccount.TabIndex = 2;
             this.dgvAccount.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgvAccount.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -350,24 +364,23 @@ namespace QShopManagement.DTO.UC
             this.dgvAccount.ThemeStyle.RowsStyle.Height = 22;
             this.dgvAccount.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dgvAccount.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.dgvAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellContentClick);
+            this.dgvAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvAccount_CellContentClick);
             // 
             // UCUserManager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(247)))), ((int)(((byte)(248)))), ((int)(((byte)(250)))));
             this.Controls.Add(this.dgvAccount);
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.plnAddAccount);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "UCUserManager";
-            this.Size = new System.Drawing.Size(950, 597);
+            this.Size = new System.Drawing.Size(1267, 735);
             this.Load += new System.EventHandler(this.UCUserManager_Load);
             this.plnAddAccount.ResumeLayout(false);
-            this.plnAddAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvAccount)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -378,12 +391,12 @@ namespace QShopManagement.DTO.UC
         private Guna.UI2.WinForms.Guna2DataGridView dgvAccount;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;
         private Guna.UI2.WinForms.Guna2TextBox txtMaNV;
-        private Guna.UI2.WinForms.Guna2TextBox txtTenNV;
-        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
-        private Guna.UI2.WinForms.Guna2TextBox txtPhoneNumber;
         private Guna.UI2.WinForms.Guna2TextBox txtPassword;
+        private Guna.UI2.WinForms.Guna2TextBox txtUserName;
+        private Guna.UI2.WinForms.Guna2TextBox txtHieuluc;
         private Guna.UI2.WinForms.Guna2Button btnUpdate;
         private Guna.UI2.WinForms.Guna2Button btnRemove;
         private Guna.UI2.WinForms.Guna2Button btnAdd;
+        private Guna.UI2.WinForms.Guna2TextBox txtrole;
     }
 }

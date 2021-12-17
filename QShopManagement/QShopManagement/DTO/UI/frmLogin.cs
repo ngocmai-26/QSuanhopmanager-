@@ -50,5 +50,10 @@ namespace QShopManagement.DTO.UI
             }
            
         }
+
+        private void frmLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

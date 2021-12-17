@@ -47,9 +47,10 @@ namespace QShopManagement.DTO.UI
             this.guna2Panel1.Controls.Add(this.guna2PictureBox1);
             this.guna2Panel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.guna2Panel1.Location = new System.Drawing.Point(0, 0);
+            this.guna2Panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(610, 511);
+            this.guna2Panel1.Size = new System.Drawing.Size(813, 629);
             this.guna2Panel1.TabIndex = 0;
             // 
             // guna2PictureBox1
@@ -58,9 +59,10 @@ namespace QShopManagement.DTO.UI
             this.guna2PictureBox1.Image = global::QShopManagement.Properties.Resources.Mesa_de_trabajo_1_copia_4x1;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.guna2PictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
             this.guna2PictureBox1.ShadowDecoration.Parent = this.guna2PictureBox1;
-            this.guna2PictureBox1.Size = new System.Drawing.Size(610, 511);
+            this.guna2PictureBox1.Size = new System.Drawing.Size(813, 629);
             this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.guna2PictureBox1.TabIndex = 0;
             this.guna2PictureBox1.TabStop = false;
@@ -68,11 +70,12 @@ namespace QShopManagement.DTO.UI
             // guna2HtmlLabel1
             // 
             this.guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Cascadia Code", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.guna2HtmlLabel1.Location = new System.Drawing.Point(717, 83);
+            this.guna2HtmlLabel1.Location = new System.Drawing.Point(956, 102);
+            this.guna2HtmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2HtmlLabel1.Name = "guna2HtmlLabel1";
-            this.guna2HtmlLabel1.Size = new System.Drawing.Size(83, 37);
+            this.guna2HtmlLabel1.Size = new System.Drawing.Size(87, 41);
             this.guna2HtmlLabel1.TabIndex = 2;
             this.guna2HtmlLabel1.Text = "Login";
             // 
@@ -95,14 +98,15 @@ namespace QShopManagement.DTO.UI
             this.txtUserName.ForeColor = System.Drawing.Color.Transparent;
             this.txtUserName.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtUserName.HoverState.Parent = this.txtUserName;
-            this.txtUserName.Location = new System.Drawing.Point(656, 276);
+            this.txtUserName.Location = new System.Drawing.Point(875, 340);
+            this.txtUserName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtUserName.Name = "txtUserName";
             this.txtUserName.PasswordChar = '\0';
             this.txtUserName.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtUserName.PlaceholderText = "User Name";
             this.txtUserName.SelectedText = "";
             this.txtUserName.ShadowDecoration.Parent = this.txtUserName;
-            this.txtUserName.Size = new System.Drawing.Size(210, 36);
+            this.txtUserName.Size = new System.Drawing.Size(280, 44);
             this.txtUserName.TabIndex = 3;
             // 
             // txtPassword
@@ -124,14 +128,15 @@ namespace QShopManagement.DTO.UI
             this.txtPassword.ForeColor = System.Drawing.Color.Transparent;
             this.txtPassword.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
             this.txtPassword.HoverState.Parent = this.txtPassword;
-            this.txtPassword.Location = new System.Drawing.Point(656, 332);
+            this.txtPassword.Location = new System.Drawing.Point(875, 409);
+            this.txtPassword.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.PasswordChar = '\0';
             this.txtPassword.PlaceholderForeColor = System.Drawing.Color.DarkGray;
             this.txtPassword.PlaceholderText = "Password";
             this.txtPassword.SelectedText = "";
             this.txtPassword.ShadowDecoration.Parent = this.txtPassword;
-            this.txtPassword.Size = new System.Drawing.Size(210, 36);
+            this.txtPassword.Size = new System.Drawing.Size(280, 44);
             this.txtPassword.TabIndex = 4;
             this.txtPassword.UseSystemPasswordChar = true;
             // 
@@ -140,7 +145,7 @@ namespace QShopManagement.DTO.UI
             this.btnLogin.Animated = true;
             this.btnLogin.AutoRoundedCorners = true;
             this.btnLogin.BackColor = System.Drawing.Color.Transparent;
-            this.btnLogin.BorderRadius = 18;
+            this.btnLogin.BorderRadius = 22;
             this.btnLogin.BorderThickness = 1;
             this.btnLogin.CheckedState.Parent = this.btnLogin;
             this.btnLogin.CustomImages.Parent = this.btnLogin;
@@ -153,10 +158,11 @@ namespace QShopManagement.DTO.UI
             this.btnLogin.Font = new System.Drawing.Font("Consolas", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLogin.ForeColor = System.Drawing.Color.White;
             this.btnLogin.HoverState.Parent = this.btnLogin;
-            this.btnLogin.Location = new System.Drawing.Point(656, 408);
+            this.btnLogin.Location = new System.Drawing.Point(875, 502);
+            this.btnLogin.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.ShadowDecoration.Parent = this.btnLogin;
-            this.btnLogin.Size = new System.Drawing.Size(210, 38);
+            this.btnLogin.Size = new System.Drawing.Size(280, 47);
             this.btnLogin.TabIndex = 6;
             this.btnLogin.Text = "Login";
             this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
@@ -168,10 +174,11 @@ namespace QShopManagement.DTO.UI
             this.guna2ControlBox1.FillColor = System.Drawing.Color.Transparent;
             this.guna2ControlBox1.HoverState.Parent = this.guna2ControlBox1;
             this.guna2ControlBox1.IconColor = System.Drawing.Color.White;
-            this.guna2ControlBox1.Location = new System.Drawing.Point(866, 6);
+            this.guna2ControlBox1.Location = new System.Drawing.Point(1155, 7);
+            this.guna2ControlBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2ControlBox1.Name = "guna2ControlBox1";
             this.guna2ControlBox1.ShadowDecoration.Parent = this.guna2ControlBox1;
-            this.guna2ControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.guna2ControlBox1.Size = new System.Drawing.Size(60, 36);
             this.guna2ControlBox1.TabIndex = 7;
             // 
             // guna2PictureBox3
@@ -179,10 +186,11 @@ namespace QShopManagement.DTO.UI
             this.guna2PictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.guna2PictureBox3.Image = global::QShopManagement.Properties.Resources.user__5_;
             this.guna2PictureBox3.ImageRotate = 0F;
-            this.guna2PictureBox3.Location = new System.Drawing.Point(718, 141);
+            this.guna2PictureBox3.Location = new System.Drawing.Point(957, 174);
+            this.guna2PictureBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.guna2PictureBox3.Name = "guna2PictureBox3";
             this.guna2PictureBox3.ShadowDecoration.Parent = this.guna2PictureBox3;
-            this.guna2PictureBox3.Size = new System.Drawing.Size(82, 77);
+            this.guna2PictureBox3.Size = new System.Drawing.Size(109, 95);
             this.guna2PictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.guna2PictureBox3.TabIndex = 5;
             this.guna2PictureBox3.TabStop = false;
@@ -191,10 +199,10 @@ namespace QShopManagement.DTO.UI
             // frmLogin
             // 
             this.AcceptButton = this.btnLogin;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(5)))), ((int)(((byte)(4)))), ((int)(((byte)(20)))));
-            this.ClientSize = new System.Drawing.Size(911, 511);
+            this.ClientSize = new System.Drawing.Size(1215, 629);
             this.Controls.Add(this.guna2ControlBox1);
             this.Controls.Add(this.btnLogin);
             this.Controls.Add(this.guna2PictureBox3);
@@ -203,9 +211,11 @@ namespace QShopManagement.DTO.UI
             this.Controls.Add(this.guna2HtmlLabel1);
             this.Controls.Add(this.guna2Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "frmLogin";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "frmLogin";
+            this.Load += new System.EventHandler(this.frmLogin_Load);
             this.guna2Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox3)).EndInit();
