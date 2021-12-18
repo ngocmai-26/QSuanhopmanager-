@@ -85,9 +85,9 @@ namespace QShopManagement.CONTROLLER
             }
 
         }
-        internal async void RemoveUser(string ID)
+        internal async void RemoveUser(string msnv)
         {
-            if (await model.RemoveUser(ID))
+            if (await model.RemoveUser(msnv))
             {
                 manager.ReLoadSource();
             }

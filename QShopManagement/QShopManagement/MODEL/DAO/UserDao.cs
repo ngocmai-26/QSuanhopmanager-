@@ -41,9 +41,18 @@ namespace QShopManagement.MODEL.DAO
             return await DB_.tbl_TAIKHOAN.ToListAsync();
         }
 
-        public async Task<tbl_TAIKHOAN> GetSingleByID(string ID)
+        public async Task<tbl_TAIKHOAN> GetSingleByID(int ID)
         {
-            return await DB_.tbl_TAIKHOAN.FindAsync(ID);
+            try
+            {
+                var ef = await DB_.tbl_TAIKHOAN.FindAsync(ID);
+                return ef;
+            }
+            catch
+            {
+                return null;
+            }
+            
         }
 
         public async Task<tbl_TAIKHOAN> GetSingleByUserNameAndPassword(string username, string password)
@@ -51,19 +60,19 @@ namespace QShopManagement.MODEL.DAO
             return await DB_.tbl_TAIKHOAN.Where(tk => tk.UserNam.Equals(username) && tk.Password.Equals(password)).FirstOrDefaultAsync();
         }
 
-        public async Task<bool> Remove(string ID)
+        public async Task<bool> Remove(string MSNV)
         {
             try
             {
                 //xoa rang buoc
-                var staffOfAccount = await DB_.tbl_NHANVIEN.Where(ct => ct.MSNV.Equals(ID)).ToListAsync();
+                var staffOfAccount = await DB_.tbl_NHANVIEN.Where(ct => ct.MSNV.Equals(MSNV)).ToListAsync();
 
                 if (staffOfAccount.Count > 0)
                 {
                     DB_.tbl_NHANVIEN.RemoveRange(staffOfAccount);
                     await DB_.SaveChangesAsync();
                 }
-                var ef = await GetSingleByID(ID);
+                var ef = await GetSingleByMSNV(MSNV);
                 if (ef != null)
                 {
                     DB_.tbl_TAIKHOAN.Remove(ef);
@@ -77,10 +86,13 @@ namespace QShopManagement.MODEL.DAO
                 return false;
             }
         }
-
+        public async Task<tbl_TAIKHOAN> GetSingleByMSNV(string MSNV)
+        {
+            return await DB_.tbl_TAIKHOAN.Where(ac => ac.MSNV.Equals(MSNV)).FirstOrDefaultAsync();
+        }
         public async Task<bool> Update(tbl_TAIKHOAN ef)
         {
-            var ef_ = await GetSingleByID(ef.MSNV);
+            var ef_ = await GetSingleByMSNV(ef.MSNV);
             if (ef_ != null)
             {
                 ef_.MSNV = ef.MSNV;
@@ -93,5 +105,12 @@ namespace QShopManagement.MODEL.DAO
             }
             return false;
         }
+
+        public Task<tbl_TAIKHOAN> GetSingleByID(string ID)
+        {
+            throw new NotImplementedException();
+        }
+
+      
     }
 }

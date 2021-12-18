@@ -57,9 +57,9 @@ namespace QShopManagement.MODEL.DAO
         {
             return await userDao.Update(user);
         }
-        internal async Task<bool> RemoveUser(string ID)
+        internal async Task<bool> RemoveUser(string msnv)
         {
-            return await userDao.Remove(ID);
+            return await userDao.Remove(msnv);
         }
 
     }

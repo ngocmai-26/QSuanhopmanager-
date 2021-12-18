@@ -159,8 +159,8 @@ namespace QShopManagement.DTO.UC
                 {
                     if (MessageBox.Show("Bạn Thật Sự Muốn Xóa " + dgvAccount.CurrentRow.Cells["UserNam"].Value.ToString() + "?", "Alert", MessageBoxButtons.YesNo, MessageBoxIcon.Warning) == DialogResult.Yes)
                     {
-                        string ID = dgvAccount.SelectedRows[0].Cells["ID"].Value.ToString();
-                        ctrlUsers.RemoveUser(ID);
+                        string msnv = dgvAccount.CurrentRow.Cells["MSNV"].Value.ToString();
+                        ctrlUsers.RemoveUser(msnv);
                     }
                 }
             }

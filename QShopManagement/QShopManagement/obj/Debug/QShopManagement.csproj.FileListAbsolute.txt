@@ -47,13 +47,13 @@ D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.dl
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.dll
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.xml
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\bin\Debug\EntityFramework.SqlServer.xml
-C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCImportBillManager.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCCustomersManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UC.UCCustomersManager.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmAddBill.resources
 C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmGetQuantity.resources
-C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.csproj.CopyComplete
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmAddBill.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmGetQuantity.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmAddImportBill.resources
 D:\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmGetQuantily2.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmAddImportBill.resources
+C:\D\QSuanhopmanager-\QShopManagement\QShopManagement\obj\Debug\QShopManagement.DTO.UI.frmGetQuantily2.resources
